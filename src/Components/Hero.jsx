@@ -12,7 +12,7 @@ function Hero() {
           xmlns:svgjs="http://svgjs.dev/svgjs"
           viewBox="0 0 800 800"
           opacity="0.39"
-          className="absolute h-4/5 w-"
+          className="absolute h-4/5 w-full"
         >
           <defs>
             <filter
@@ -71,10 +71,10 @@ function Hero() {
           </ul>
         </div>
       </div>
-      <div className="mt-14 mb-36">
+      <div className="mt-14 mb-36 2xl:w-full sm:w-3/5">
         <h1 className="xl:text-7xl lg:text-6xl text-4xl font-extrabold text-center mb-5">Hello. I'm QzSeeker.</h1>
         <h1 className="xl:text-7xl lg:text-6xl text-4xl font-extrabold text-lime-500 text-center">Less copying, more coffee.</h1>
-        <p className="text-center mt-8 text-lg tracking-widest px-4">My passion? Learning and creating content that simplifies the complex and helps others thrive.</p>
+        <p className="text-center mt-8 text-lg tracking-wide px-4">My passion? Learning and creating content that simplifies the complex and helps others thrive.</p>
       </div>
     </>
   );
