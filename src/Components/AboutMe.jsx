@@ -2,8 +2,8 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="w-3/5 flex flex-col justify-center">
-      <h1 className="text-4xl">About</h1>
+    <div className="mx-14 xl:mx-56">
+      <h1 className="text-2xl">About</h1>
       <p className="tracking-wide mt-8">
         At 19, I'm a self-taught frontend developer from India with a burning
         passion for crafting things for the web. Just three months into a coding

@@ -14,7 +14,7 @@ function App() {
       <AboutMe />
       <Skills />
       <Projects />
-      <Chat />
+      {/* <Chat /> */}
       </div>
     </>
   )
