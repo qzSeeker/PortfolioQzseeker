@@ -85,7 +85,7 @@ function Chat() {
                     <p className="text-sm ">Ask me a question</p>
                 </div>
                 <img
-                    src="src/assets/close.png"
+                    src="/close.png"
                     onClick={handleChatBox}
                     className="h-3 text-white cursor-pointer"
                 />
