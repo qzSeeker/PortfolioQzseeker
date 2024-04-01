@@ -78,7 +78,7 @@ function Hero() {
             </ul>
           </div>
         </div>
-        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-2 md:mx-14">
+        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
           <h1 className="xl:text-7xl lg:text-6xl text-4xl font-extrabold text-center mb-5">
             Hello. I'm QzSeeker.
           </h1>
