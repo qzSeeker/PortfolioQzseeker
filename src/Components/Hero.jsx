@@ -1,3 +1,4 @@
+'use client'
 import React, { useState } from "react";
 import Chat from "./ChatBot";
 
@@ -8,6 +9,7 @@ function Hero() {
     setIsChatBoxOpen(!isChatBoxOpen);
     console.log("ChatBox is Open");
   }
+
   return (
     <>
       <div>

@@ -8,7 +8,7 @@ function Projects() {
   )
   return (
     <div className='w-full'>
-      <div className='mt-12 mb-10 mx-14 xl:mx-56'>
+      <div className='mt-12 mb-10 mx-8 xl:mx-56'>
         <h1 className='text-2xl mb-8'>Projects</h1>
         <div className='flex flex-wrap gap-4'>
           {card}

@@ -77,7 +77,7 @@ function Chat() {
     return (
         <>
         {chatBoxIsClosed ? (
-            <div className="h-screen w-screen md:w-96 md:h-[62rem] fixed md:top-56 top-0 md:right-10 shadow-md">
+            <div className="h-screen w-screen md:w-96 md:h-[62rem] fixed md:top-56 top-0 md:right-10 shadow-md transition-all duration-500 ease-in-out delay-200">
             <div className="md:h-3/5 h-full md:min-w-1/4 w-full backdrop-blur-sm bg-white/15 border border-white/10 rounded-md overflow-hidden mb-20">
                 <div className="h-16 w-full bg-violet-500 overflow-hidden flex justify-between items-center px-8">
                 <div className="flex flex-col justify-center">
@@ -93,8 +93,10 @@ function Chat() {
 
                 <div className="">
                 {messages.map((message, index) => (
-                    <ul className="bg-white text-violet-400 shadow-md flex m-6 p-4 w-max rounded-lg font-semibold" key={index}>
-                        <li className="ease-in transition-transform delay-700">{message}</li>
+                    <ul className="bg-white text-violet-400 shadow-md flex m-6 p-4 w-max rounded-lg font-semibold  transition-all duration-500 ease-in-out delay-200" key={index}
+                    style={{ transitionDelay: `${index * 300}ms` }}
+                    >
+                        <li className="">{message}</li>
                     </ul>
                 ))}
                 </div>
