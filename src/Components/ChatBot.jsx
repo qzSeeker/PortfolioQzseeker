@@ -1,30 +1,30 @@
 import React, { useEffect, useState } from "react";
 
-    const questions = [
-    {
-        question: "What are you interested in learning about?",
-        options: ["My skills", "My experience", "Something else"],
-    },
-    {
-        question: "Which of my skills are you curious about?",
-        options: ["React.js", "JavaScript", "Machine Learning"],
-    },
-    ];
-
-function Chat() {
-    const [currentQuestion, setCurrentQuestion] = useState(0);
-    const [selectedOption, setSelectedOption] = useState(null);
-    const [botResponse, setBotResponse] = useState("");
-    const [chatBoxIsClosed, setChatBoxIsClosed] = useState(true);
-    const [messages, setMessages] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0);
-
     // Greeting Messages
     const greetingMessages = [
         "Hello!",
         "Welcome to Qzseeker Bot!",
         "How can I assist you today?",
     ];
+    // Questions
+    const questions = [
+        {
+            question: "Just saying Radhe Radhe🙏🏻",
+            answers: ["Radhe Radhe🙏🏻", "Thanks for greeting!", "I hope you liked my work.", "is there anything else I can assist you with?"],
+        },
+        {
+            question: "Which tech stack you are using?",
+            answers: ["React.js", "JavaScript", "Machine Learning"],
+        },
+    ];    
+
+function Chat() {
+    // const [currentQuestion, setCurrentQuestion] = useState(null);
+    // const [isQuestionShowing, setIsQuestionShowing] = useState(false);
+    const [chatBoxIsClosed, setChatBoxIsClosed] = useState(true);
+    const [messages, setMessages] = useState([]);
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const [selectedQuestion, setSelectedQuestion] = useState(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -33,87 +33,82 @@ function Chat() {
             ...prevMessages,
             greetingMessages[currentIndex],
             ]);
-            setCurrentIndex((prevIndex) => prevIndex + 1);
-        } else {
+            setCurrentIndex(currentIndex + 1);
+        } else if (currentIndex === greetingMessages.length) {
             clearInterval(interval);
         }
         }, 800);
 
         return () => clearInterval(interval);
-    }, [currentIndex]);
+    }, [currentIndex, greetingMessages.length]);
 
-    // handle options
-    const handleOptionClick = (option) => {
-        setSelectedOption(option);
-        const response = generateBotResponse();
-        setBotResponse(response);
-    };
+    setTimeout(() => {
+        return questions;
+    }, 1200);
 
-    // const generateBotResponse = () => {
-    //     if (selectedOption !== null) {
-    //     const currentQ = questions[currentQuestion];
-    //     if (currentQ.question === "What are you interested in learning about?") {
-    //         if (selectedOption === "My skills") {
-    //         return "Here are some of my key skills: React.js, JavaScript, and Machine Learning.";
-    //         } else if (selectedOption === "My experience") {
-    //         return "I have experience in building web applications and data analysis projects.";
-    //         } else {
-    //         return "Let me know if you have any other questions!";
-    //         }
-    //     } else if (
-    //         currentQ.question === "Which of my skills are you curious about?"
-    //     ) {
-    //         return `You're curious about ${selectedOption}.`;
+    // const handleNextQuestion = () => {
+    //     if (questions.length > 1 && currentIndex < questions.length - 1) {
+    //       // Show the next question if there are more questions
+    //         setCurrentQuestion(questions[currentIndex + 1]);
+    //         setCurrentIndex(currentIndex + 1);
+    //     } else {
+    //       // Handle the end of questions (optional: reset or provide feedback)
     //     }
-    //     }
-    //     return "";
     // };
 
+    // handling chatbox
     function handleChatBox() {
         setChatBoxIsClosed(!chatBoxIsClosed);
         console.log("ChatBox is Close");
     }
 
+    const handleSelectQuestion = (question) => {
+        setSelectedQuestion(question);
+    }
+
     return (
         <>
         {chatBoxIsClosed ? (
-            <div className="h-screen w-screen md:w-96 md:h-[62rem] fixed md:top-56 top-0 md:right-10 shadow-md transition-all duration-500 ease-in-out delay-200">
-            <div className="md:h-3/5 h-full md:min-w-1/4 w-full backdrop-blur-sm bg-white/15 border border-white/10 rounded-md overflow-hidden mb-20">
-                <div className="h-16 w-full bg-violet-500 overflow-hidden flex justify-between items-center px-8">
-                <div className="flex flex-col justify-center">
-                    <h1 className="font-semibold text-sm">Qzseeker bot</h1>
-                    <p className="text-sm ">Ask me a question</p>
-                </div>
-                <img
-                    src="/close.png"
-                    onClick={handleChatBox}
-                    className="h-3 text-white cursor-pointer"
-                />
-                </div>
-
-                <div className="">
-                {messages.map((message, index) => (
-                    <ul className="bg-white text-violet-400 shadow-md flex m-6 p-4 w-max rounded-lg font-semibold  transition-all duration-500 ease-in-out delay-200" key={index}
-                    style={{ transitionDelay: `${index * 300}ms` }}
-                    >
-                        <li className="">{message}</li>
-                    </ul>
-                ))}
-                </div>
-                {/* <h1 className="bg-white text-lime-600 text-sm font-semibold rounded-lg p-2 m-3">
-                    {questions[currentQuestion]?.question}
-                    </h1> */}
-                {/* {questions[currentQuestion]?.options.map((option) => (
-                    <button
-                        className="bg-white rounded-lg text-lime-600 text-sm p-2 font-semibold flex flex-col m-3"
-                        key={option}
-                        onClick={() => handleOptionClick(option)}
-                    >
-                        {option}
-                    </button>
+            <div className="h-screen w-screen md:w-96 md:h-[56rem] fixed md:top-56 top-0 md:right-10 shadow-md rounded-md overflow-hidden">
+                    <div className="h-16 w-full bg-violet-500 flex justify-between items-center px-8 z-10 sticky">
+                        <div className="flex flex-col justify-center">
+                            <h1 className="font-semibold text-sm">Qzseeker bot</h1>
+                            <p className="text-sm ">Ask me a question</p>
+                        </div>
+                        <img src="/close.png" onClick={handleChatBox} className="h-3 text-white cursor-pointer"/>
+                    </div>
+                <div className="md:h-3/5 h-full md:min-w-1/4 w-full backdrop-blur-sm rounded-b-md bg-white/10 mb-20 overflow-auto">
+                    <div>
+                    {messages.map((message, index) => (
+                        <ul key={index}>
+                            <li className="bg-white text-violet-400 font-semibold shadow-md flex m-4 p-3 w-max rounded-md transition duration-150 ease-in">
+                                {message}
+                            </li>
+                        </ul>
                     ))}
-                    {botResponse && <p>{botResponse}</p>} */}
-            </div>
+                    </div>
+                    {currentIndex === greetingMessages.length && questions.length > 0 && (
+                        <div>
+                            <ul>
+                                {questions.map((question, index) => (
+                                    <li key={index}>
+                                        <button onClick={handleSelectQuestion} className="w-max border border-violet-400 rounded-full text-violet-400 p-3 m-4 font-semibold flex flex-col">{question.question}</button>
+                                    </li>
+                                ))}
+                            </ul>
+                            <ul>
+                            {selectedQuestion && (
+                                <div>
+                                    <p>{selectedQuestion.question}</p>
+                                    <ul>
+                                        <li className="bg-white text-violet-400 font-semibold shadow-md flex m-4 p-3 w-max rounded-md overflow-hidden" key={index}>{answer}</li>
+                                    </ul>
+                                </div>
+                                )}
+                            </ul>
+                        </div>
+                    )}
+                </div>
             </div>
         ) : (
             " "

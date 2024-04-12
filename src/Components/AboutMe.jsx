@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutMe() {
   return (
-    <div className="mx-8 xl:mx-56">
+    <div className="mx-8 xl:mx-40">
       <h1 className="text-2xl">About</h1>
       <p className="tracking-wide mt-8">
         At 19, I'm a self-taught frontend developer from India with a burning
