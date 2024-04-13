@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Cards({ title, description, link, img, tech, ...otherProps }) {
     return (
-        <div className="h-56 flex justify-between p-4 w-full rounded-md bg-white/10 ease-in hover:border border-white/15 duration-300 transition shadow-md hover:shadow-violet-400 overflow-hidden">
+        <div className="h-max flex justify-evenly p-6 w-full rounded-md bg-white/10 ease-in hover:border border-white/15 duration-300 transition shadow-md hover:shadow-violet-400 overflow-hidden">
         <div className="">
             <h1 className="">{title}</h1>
             <p className="mt-5">{description}</p>

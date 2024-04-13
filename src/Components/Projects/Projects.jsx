@@ -9,7 +9,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="flex gap-6 mt-8">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
           <li className="border border-violet-400 p-2 rounded">HTML</li>
           <li className="border border-violet-400 p-2 rounded">CSS</li>
           <li className="border border-violet-400 p-2 rounded">JavaScript</li>
@@ -22,7 +22,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="flex gap-6 mt-8">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
           <li className="border border-violet-400 p-2 rounded">ReactJS</li>
           <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
           <li className="border border-violet-400 p-2 rounded">Redux</li>
@@ -35,7 +35,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="flex gap-6 mt-8">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
           <li className="border border-violet-400 p-2 rounded">HTML</li>
           <li className="border border-violet-400 p-2 rounded">CSS</li>
           <li className="border border-violet-400 p-2 rounded">JavaScript</li>
@@ -48,7 +48,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="flex gap-6 mt-8">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
           <li className="border border-violet-400 p-2 rounded">HTML</li>
           <li className="border border-violet-400 p-2 rounded">CSS</li>
           <li className="border border-violet-400 p-2 rounded">JavaScript</li>
