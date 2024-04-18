@@ -5,8 +5,8 @@ function Footer() {
     <div className="w-full h-max mb-12 px-8 md:px-40">
       <div className="h-[2px] w-full bg-white/15 mb-6"></div>
       <div className="flex justify-between mx-8 xl:mx-40">
-        <h1 className="text-[12px]">
-          Copyright &nbsp;© &nbsp;2024 &nbsp;QzSeeker
+        <h1 className="text-[10px]">
+          Copyright © 2024 QzSeeker
         </h1>
         <div className="flex w-max gap-2">
           <a href="https://www.linkedin.com/in/arpit-yadav-29b5a0257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
