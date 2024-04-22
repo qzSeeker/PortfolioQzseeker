@@ -4,6 +4,7 @@ import Blogs from "./Components/Blogs/Blogs";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects/Projects";
+import Page from "./Components/Qualifications/Page";
 import Skills from "./Components/Skills";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <AboutMe />
         <Skills />
+        <Page />
         <Projects />
         <Blogs />
         <Footer />

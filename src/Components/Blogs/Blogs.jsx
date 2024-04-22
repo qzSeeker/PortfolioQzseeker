@@ -9,23 +9,23 @@ function Blogs() {
         date: "Apr 13 2024",
         duration: "3 min read",
         link: "https://qzseeker.hashnode.dev/a-beginners-guide-to-javascript-for-web-development",
-        img: "link.png"
+        img: "external-link.png"
         },
         {
-        title: "A Beginner's Guide to JavaScript for Web Development.",
+        title: "Title",
         name: "QzSeeker",
-        date: "Apr 13 2024",
-        duration: "3 min read",
+        date: "- - 2024",
+        duration: "0 min read",
         link: "https://qzseeker.hashnode.dev/a-beginners-guide-to-javascript-for-web-development",
-        img: "link.png"
+        img: "external-link.png"
         },
         {
-        title: "A Beginner's Guide to JavaScript for Web Development.",
+        title: "Title",
         name: "QzSeeker",
-        date: "Apr 13 2024",
-        duration: "3 min read",
+        date: "- - 2024",
+        duration: "0 min read",
         link: "https://qzseeker.hashnode.dev/a-beginners-guide-to-javascript-for-web-development",
-        img: "link.png"
+        img: "external-link.png"
         },
     ];
     return (
