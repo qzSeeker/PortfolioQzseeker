@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Chat from "./ChatBot";
+import { Link } from "react-scroll";
 
 function Hero() {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
@@ -12,7 +13,7 @@ function Hero() {
 
   return (
     <>
-      <div>
+      <div id="hero">
         <div className="h-max w-full flex items-center justify-center py-10 mt-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -66,15 +67,15 @@ function Hero() {
           <div className="2xl:h-14 h-12 w-80 2xl:w-1/3 md:w-2/5 backdrop-blur-sm bg-white/10 flex items-center justify-center rounded-full border border-white/10 fixed">
             <ul className="flex gap-2 2xl:gap-14 text-sm xl:text-base tracking-wider">
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                Home
+                <Link to="hero" spy={true} smooth={true} offset={-150} duration={500}>Home</Link>
               </li>
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                About
+                <Link to="about" spy={true} smooth={true} offset={-80} duration={500}>About</Link>
               </li>
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                Work
+                <Link to="work" spy={true} smooth={true} offset={-50} duration={500}>Work</Link>
               </li>
-              <li onClick={handleChatBox} className="cursor-pointer hover:bg-white/15 border hover:border-white/15 border-violet-400 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
+              <li onClick={handleChatBox} className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
                 Chat
               </li>
             </ul>

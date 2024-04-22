@@ -65,7 +65,7 @@ function Projects() {
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full" id="work">
       <div className="mt-12 mb-10 mx-8 xl:mx-40">
         <h1 className="text-2xl mb-8">Projects</h1>
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
