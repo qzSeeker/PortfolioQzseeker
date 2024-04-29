@@ -5,7 +5,7 @@ function Projects() {
   const cards = [
     {
       title: "Tic-tac-toi",
-      description: "Project description",
+      description: "Currently working on it!",
       webImg: "link.png",
       webLink: "https://xo-blast.netlify.app",
       img: "github.png",
@@ -41,7 +41,7 @@ function Projects() {
     },
     {
       title: "Chat-Lee",
-      description: "Realtime chat application",
+      description: "Realtime chat application - Currently working on it!",
       webImg: "link.png",
       webLink: "https://github.com/qzSeeker/React-chat-app",
       img:"github.png",
@@ -55,17 +55,17 @@ function Projects() {
       ),
     },
     {
-      title: "QzSeeker",
-      description: "Project description",
+      title: "QzSeeker-Clothing",
+      description: "Project status - pending...",
       webImg: "link.png",
       webLink: "#",
       img: "github.png",
       link: "#",
       tech: (
         <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
-          <li className="border border-violet-400 p-2 rounded">HTML</li>
-          <li className="border border-violet-400 p-2 rounded">CSS</li>
-          <li className="border border-violet-400 p-2 rounded">JavaScript</li>
+          <li className="border border-violet-400 p-2 rounded">React</li>
+          <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
+          <li className="border border-violet-400 p-2 rounded">Firebase</li>
         </ul>
       ),
     },
