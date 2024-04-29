@@ -11,7 +11,7 @@ function Hero() {
     console.log("ChatBox is Open");
   }
 
-  const title = ["Qzseeker", "Arpit"];
+  const title = ["Qzseeker", "Arpit Yadav"];
   const [currentTitle, setCurrentTitle] = useState(title[0]);
   const [titleIndex, setTitleIndex] = useState(0);
 
