@@ -9,8 +9,8 @@ import React, { useEffect, useState } from "react";
     // Questions
     const questions = [
         {
-            question: "Just saying Radhe Radhe🙏🏻",
-            answers: ["Radhe Radhe🙏🏻", "Thanks for greeting!", "I hope you liked my work.", "is there anything else I can assist you with?"],
+            question: "Just say Hello Dev!",
+            answers: ["Hello", "Thanks for greeting!", "I hope you liked my work.", "is there anything else I can assist you with?"],
         },
         {
             question: "Which tech stack you are using?",
@@ -48,7 +48,7 @@ function Chat() {
 
     // const handleNextQuestion = () => {
     //     if (questions.length > 1 && currentIndex < questions.length - 1) {
-    //       // Show the next question if there are more questions
+            
     //         setCurrentQuestion(questions[currentIndex + 1]);
     //         setCurrentIndex(currentIndex + 1);
     //     } else {
