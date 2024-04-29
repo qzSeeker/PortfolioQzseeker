@@ -20,7 +20,13 @@ function Projects() {
     },
     {
       title: "JavaScript Projects",
-      description: "Project description",
+      description: (
+        <ul className="text-sm gap-4 md:flex">
+          <li>- Quote Generator</li>
+          <li>- Stopwatch</li>
+          <li>- Todo List</li>
+        </ul>
+      ),
       webImg: "link.png",
       webLink: "https://github.com/qzSeeker/JavaScript-Projects",
       img: "github.png",
@@ -34,17 +40,17 @@ function Projects() {
       ),
     },
     {
-      title: "Project-3",
-      description: "Project description",
+      title: "Chat-Lee",
+      description: "Realtime chat application",
       webImg: "link.png",
-      webLink: "#",
+      webLink: "https://github.com/qzSeeker/React-chat-app",
       img:"github.png",
-      link: "https://www.google.com",
+      link: "https://github.com/qzSeeker/React-chat-app",
       tech: (
         <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
-          <li className="border border-violet-400 p-2 rounded">HTML</li>
-          <li className="border border-violet-400 p-2 rounded">CSS</li>
-          <li className="border border-violet-400 p-2 rounded">JavaScript</li>
+          <li className="border border-violet-400 p-2 rounded">React</li>
+          <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
+          <li className="border border-violet-400 p-2 rounded">Firebase</li>
         </ul>
       ),
     },

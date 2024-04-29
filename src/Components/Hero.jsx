@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Chat from "./ChatBot";
 import { Link } from "react-scroll";
 
@@ -10,6 +10,20 @@ function Hero() {
     setIsChatBoxOpen(!isChatBoxOpen);
     console.log("ChatBox is Open");
   }
+
+  const title = ["Qzseeker", "Arpit"];
+  const [currentTitle, setCurrentTitle] = useState(title[0]);
+  const [titleIndex, setTitleIndex] = useState(0);
+
+  useEffect(() => {
+    const interId = setInterval(() => {
+      const newIndex = (titleIndex + 1) % title.length;
+      setCurrentTitle(title[newIndex]);
+      setTitleIndex(newIndex);
+    }, 1400);
+
+    return () => clearInterval(interId);
+  })
 
   return (
     <>
@@ -82,11 +96,11 @@ function Hero() {
           </div>
         </div>
         <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-center mb-5">
-            Hello. I'm QzSeeker.
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-center mb-5 relative">
+            Hello. I'm <span className="">{currentTitle}.</span>
           </h1>
           <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-violet-400 text-center leading-normal">
-            Less copying, more coffee.
+            Less copying, more caffeine.
           </h1>
           <p className="text-center mt-8 text-lg tracking-wide px-4">
             My passion? Learning and creating content that simplifies the
