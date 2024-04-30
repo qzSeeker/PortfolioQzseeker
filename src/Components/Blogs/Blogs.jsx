@@ -20,7 +20,7 @@ function Blogs() {
         img: "external-link.png"
         },
         {
-        title: "Title",
+        title: "Title 1",
         name: "QzSeeker",
         date: "- - 2024",
         duration: "0 min read",

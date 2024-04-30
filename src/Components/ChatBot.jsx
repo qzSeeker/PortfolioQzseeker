@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-    // Greeting Messages
     const greetingMessages = [
         "Hello!",
         "Welcome to Qzseeker Bot!",
         "How can I assist you today?",
     ];
-    // Questions
+
     const questions = [
         {
             question: "Just say Hello Dev!",
@@ -19,8 +18,6 @@ import React, { useEffect, useState } from "react";
     ];    
 
 function Chat() {
-    // const [currentQuestion, setCurrentQuestion] = useState(null);
-    // const [isQuestionShowing, setIsQuestionShowing] = useState(false);
     const [chatBoxIsClosed, setChatBoxIsClosed] = useState(true);
     const [messages, setMessages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -46,17 +43,6 @@ function Chat() {
         return questions;
     }, 1200);
 
-    // const handleNextQuestion = () => {
-    //     if (questions.length > 1 && currentIndex < questions.length - 1) {
-            
-    //         setCurrentQuestion(questions[currentIndex + 1]);
-    //         setCurrentIndex(currentIndex + 1);
-    //     } else {
-    //       // Handle the end of questions (optional: reset or provide feedback)
-    //     }
-    // };
-
-    // handling chatbox
     function handleChatBox() {
         setChatBoxIsClosed(!chatBoxIsClosed);
         console.log("ChatBox is Close");
@@ -64,6 +50,7 @@ function Chat() {
 
     const handleSelectQuestion = (question) => {
         setSelectedQuestion(question);
+
     }
 
     return (
@@ -101,11 +88,11 @@ function Chat() {
                                 <div>
                                     <p>{selectedQuestion.question}</p>
                                     <ul>
-                                        <li className="bg-white text-violet-400 font-semibold shadow-md flex m-4 p-3 w-max rounded-md overflow-hidden" key={index}>{answer}</li>
+                                        <li className="bg-white text-violet-400 font-semibold shadow-md flex m-4 p-3 w-max rounded-md overflow-hidden">{questions.answers}</li>
                                     </ul>
                                 </div>
                                 )}
-                            </ul>
+                            </ul> 
                         </div>
                     )}
                 </div>

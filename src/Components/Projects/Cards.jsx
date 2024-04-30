@@ -16,7 +16,7 @@ function Cards({
             <div className="flex justify-between items-center mb-4">
                 <div className="flex flex-col gap-4">
                     <h1 className="">{title}</h1>
-                    <p className="text-sm">{description}</p>
+                    <h1 className="text-sm">{description}</h1>
                 </div>
                 <div className="flex gap-4">
                 <Link
