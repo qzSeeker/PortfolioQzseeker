@@ -51,6 +51,7 @@ function Projects() {
           <li className="border border-violet-400 p-2 rounded">React</li>
           <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
           <li className="border border-violet-400 p-2 rounded">Firebase</li>
+          <li className="border border-violet-400 p-2 rounded">Zustand</li>
         </ul>
       ),
     },
