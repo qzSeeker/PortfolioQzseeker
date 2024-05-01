@@ -14,6 +14,15 @@ function Hero() {
   const title = ["Qzseeker", "Arpit Yadav"];
   const [currentTitle, setCurrentTitle] = useState(title[0]);
   const [titleIndex, setTitleIndex] = useState(0);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+  })
 
   useEffect(() => {
     const interId = setInterval(() => {
@@ -78,7 +87,7 @@ function Hero() {
               ></ellipse>
             </g>
           </svg>
-          <div className="2xl:h-14 h-12 w-80 2xl:w-1/3 md:w-2/5 backdrop-blur-sm bg-white/10 flex items-center justify-center rounded-full border border-white/10 fixed z-20">
+          <div className={`2xl:h-14 h-12 w-80 2xl:w-1/3 md:w-2/5 ${isScrolled ? 'bg-white/10  backdrop-blur-sm' : 'bg-transparent'} flex items-center justify-center rounded-full border border-white/10 fixed z-20`}>
             <ul className="flex gap-2 2xl:gap-14 text-sm xl:text-base tracking-wider">
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
                 <Link to="hero" spy={true} smooth={true} offset={-150} duration={500}>Home</Link>
