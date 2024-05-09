@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useEffect, useState } from "react";
 import Chat from "./ChatBot";
 import { Link } from "react-scroll";
@@ -9,7 +9,7 @@ function Hero() {
   const handleChatBox = () => {
     setIsChatBoxOpen(!isChatBoxOpen);
     console.log("ChatBox is Open");
-  }
+  };
 
   const title = ["Qzseeker", "Arpit Yadav"];
   const [currentTitle, setCurrentTitle] = useState(title[0]);
@@ -21,8 +21,8 @@ function Hero() {
       setIsScrolled(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
-  })
+    window.addEventListener("scroll", handleScroll);
+  });
 
   useEffect(() => {
     const interId = setInterval(() => {
@@ -32,20 +32,20 @@ function Hero() {
     }, 1400);
 
     return () => clearInterval(interId);
-  })
+  });
 
   return (
     <>
       <div id="hero">
         <div className="h-max w-full flex items-center justify-center py-10 mt-8">
-          {/* <svg
+          <svg
             xmlns="http://www.w3.org/2000/svg"
+            className="absolute h-full w-full"
             version="1.1"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             xmlns:svgjs="http://svgjs.dev/svgjs"
-            viewBox="0 0 800 800"
-            opacity="0.39"
-            className="absolute h-4/5 w-full"
+            viewBox="0 0 800 450"
+            opacity="0.38"
           >
             <defs>
               <filter
@@ -59,7 +59,7 @@ function Hero() {
                 colorInterpolationFilters="sRGB"
               >
                 <feGaussianBlur
-                  stdDeviation="76"
+                  stdDeviation="64"
                   x="0%"
                   y="0%"
                   width="100%"
@@ -72,36 +72,64 @@ function Hero() {
             </defs>
             <g filter="url(#bbblurry-filter)">
               <ellipse
-                rx="107"
-                ry="277.5"
-                cx="289.46808938656545"
-                cy="395.75458660772836"
-                fill="hsla(272, 83%, 56%, 1.00)"
+                rx="88"
+                ry="261.5"
+                cx="340.52325439453125"
+                cy="20.149383544921875"
+                fill="hsla(0, 0%, 100%, 1.00)"
               ></ellipse>
               <ellipse
-                rx="107"
-                ry="277.5"
-                cx="443.8336199663372"
-                cy="254.53744329030303"
-                fill="hsla(88, 100%, 30%, 1.00)"
+                rx="88"
+                ry="261.5"
+                cx="517.287524649322"
+                cy="65.94709917517326"
+                fill="hsla(272, 72%, 57%, 1.00)"
               ></ellipse>
             </g>
-          </svg> */}
-          <svg xmlns="http://www.w3.org/2000/svg"
-            className="absolute h-4/5 w-full" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" viewBox="0 0 800 450" opacity="0.38"><defs><filter id="bbblurry-filter" x="-100%" y="-100%" width="400%" height="400%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-	<feGaussianBlur stdDeviation="64" x="0%" y="0%" width="100%" height="100%" in="SourceGraphic" edgeMode="none" result="blur"></feGaussianBlur></filter></defs><g filter="url(#bbblurry-filter)"><ellipse rx="88" ry="261.5" cx="340.52325439453125" cy="20.149383544921875" fill="hsla(0, 0%, 100%, 1.00)"></ellipse><ellipse rx="88" ry="261.5" cx="517.287524649322" cy="65.94709917517326" fill="hsla(272, 72%, 57%, 1.00)"></ellipse></g></svg>
-          <div className={`2xl:h-14 h-12 w-80 2xl:w-1/3 md:w-2/5 ${isScrolled ? 'bg-white/10  backdrop-blur-sm' : 'bg-transparent'} flex items-center justify-center rounded-full border border-white/10 fixed z-20`}>
+          </svg>
+          <div
+            className={`2xl:h-14 h-12 w-80 2xl:w-1/3 md:w-2/5 ${
+              isScrolled ? "bg-white/10  backdrop-blur-sm" : "bg-transparent"
+            } flex items-center justify-center rounded-full border border-white/10 fixed z-20`}
+          >
             <ul className="flex gap-2 2xl:gap-14 text-sm xl:text-base tracking-wider">
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                <Link to="hero" spy={true} smooth={true} offset={-150} duration={500}>Home</Link>
+                <Link
+                  to="hero"
+                  spy={true}
+                  smooth={true}
+                  offset={-150}
+                  duration={500}
+                >
+                  Home
+                </Link>
               </li>
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                <Link to="about" spy={true} smooth={true} offset={-80} duration={500}>About</Link>
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  offset={-80}
+                  duration={500}
+                >
+                  About
+                </Link>
               </li>
               <li className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
-                <Link to="work" spy={true} smooth={true} offset={-50} duration={500}>Work</Link>
+                <Link
+                  to="work"
+                  spy={true}
+                  smooth={true}
+                  offset={-50}
+                  duration={500}
+                >
+                  Work
+                </Link>
               </li>
-              <li onClick={handleChatBox} className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full">
+              <li
+                onClick={handleChatBox}
+                className="cursor-pointer hover:bg-white/15 hover:border border-white/15 duration-150 ease h-9 w-16 flex items-center justify-center rounded-full"
+              >
                 Chat
               </li>
             </ul>
