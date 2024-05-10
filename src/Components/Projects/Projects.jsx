@@ -43,9 +43,9 @@ function Projects() {
       title: "Chat-Lee",
       description: "Realtime chat application - Currently working on it!",
       webImg: "link.png",
-      webLink: "https://github.com/qzSeeker/React-chat-app",
+      webLink: "https://github.com/qzSeeker/React-Chat-App",
       img:"github.png",
-      link: "https://github.com/qzSeeker/React-chat-app",
+      link: "https://github.com/qzSeeker/React-Chat-App",
       tech: (
         <ul className="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-8 text-sm">
           <li className="border border-violet-400 p-2 rounded">React</li>
