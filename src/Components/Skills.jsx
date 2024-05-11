@@ -10,11 +10,11 @@ function Skills() {
     { id: 6, skill: "Tailwind CSS" },
     { id: 7, skill: "Bootstrap" },
     { id: 8, skill: "Material UI" },
-    { id: 1, skill: "VS Code" },
-    { id: 2, skill: "Git" },
-    { id: 3, skill: "GitHub" },
-    { id: 1, skill: "Netlify" },
-    { id: 2, skill: "Firebase" },
+    { id: 9, skill: "VS Code" },
+    { id: 10, skill: "Git" },
+    { id: 11, skill: "GitHub" },
+    { id: 12, skill: "Netlify" },
+    { id: 13, skill: "Firebase" },
   ];
 
   return (
