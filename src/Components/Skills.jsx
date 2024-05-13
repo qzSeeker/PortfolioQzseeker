@@ -32,7 +32,7 @@ function Skills() {
                   key={item.id}
                   className={`bg-black/20 p-3 rounded-md text-center text-sm md:text-md w-max ${
                     item.id === 7
-                      ? "border border-green-400"
+                      ? "border border-violet-500"
                       : "border-none" && (item.id === 6 || item.id === 4)
                       ? "border border-blue-500"
                       : "border-none" && item.id === 3
@@ -54,9 +54,9 @@ function Skills() {
                   key={item.id}
                   className={`bg-black/20 p-3 rounded-md text-center text-sm md:text-md w-max ${
                     item.id === 12
-                      ? "border border-green-400"
+                      ? "border border-teal-400"
                       : "border-none" && item.id === 13
-                      ? "border border-blue-500"
+                      ? "border border-yellow-500"
                       : "border-none" && item.id === 11
                       ? "border border-gray-400"
                       : "border-none"
