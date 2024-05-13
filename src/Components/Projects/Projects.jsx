@@ -11,7 +11,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/Tic-Tac-Toe",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
           <li className="border border-violet-400 p-2 rounded">ReactJS</li>
           <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
           <li className="border border-violet-400 p-2 rounded">Zustand</li>
@@ -32,7 +32,7 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
           <li className="border border-violet-400 p-2 rounded">HTML</li>
           <li className="border border-violet-400 p-2 rounded">CSS</li>
           <li className="border border-violet-400 p-2 rounded">JavaScript</li>
@@ -47,7 +47,7 @@ function Projects() {
       img:"github.png",
       link: "https://github.com/qzSeeker/React-Chat-App",
       tech: (
-        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-8 text-sm">
+        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
           <li className="border border-violet-400 p-2 rounded">React</li>
           <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
           <li className="border border-violet-400 p-2 rounded">Firebase</li>
@@ -63,7 +63,7 @@ function Projects() {
       img: "github.png",
       link: "#",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm">
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
           <li className="border border-violet-400 p-2 rounded">React</li>
           <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
           <li className="border border-violet-400 p-2 rounded">Firebase</li>
