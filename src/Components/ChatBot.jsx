@@ -98,7 +98,7 @@ function Chat() {
 
     return (
         <>
-            <div className={`h-screen w-screen md:w-96 md:h-[56rem] fixed md:top-56 top-0 md:right-10 shadow-md rounded-md overflow-hidden z-30 ${chatBoxIsClosed ? "hidden" : ""}`}>
+            <div className={`h-screen w-screen md:w-96 md:h-[54rem] fixed md:top-56 top-0 md:right-10 shadow-md rounded-md overflow-hidden z-30 ${chatBoxIsClosed ? "hidden" : ""}`}>
                 <div className="h-16 w-full bg-violet-500 flex justify-between items-center px-8 z-10 sticky">
                     <div className="flex flex-col justify-center">
                         <h1 className="font-semibold text-sm">Qzseeker bot</h1>
