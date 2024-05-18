@@ -125,7 +125,7 @@ function Chat() {
                         }`}
                     >
                         <li
-                        className={` font-semibold shadow-md flex m-4 p-3 w-max transition duration-150 ease-in
+                        className={` font-semibold relative top-2 shadow-md flex mx-4 my-2 p-3 w-max transition duration-150 ease-in
                                         ${
                                         message.isUser
                                             ? "bg-transparent text-violet-400 border border-violet-400 rounded-full"
@@ -151,7 +151,7 @@ function Chat() {
                             </li>
                         ))}
                         </ul>
-                        <div ref={endRef} className=""></div>
+                        <div ref={endRef} className="h-2 scroll-smooth"></div>
                     </div>
                     )}
             </div>
