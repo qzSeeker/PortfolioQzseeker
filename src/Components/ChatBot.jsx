@@ -101,11 +101,11 @@ function Chat() {
     return (
         <>
         <div
-            className={`h-screen w-screen md:w-96 md:h-[54rem] fixed md:top-56 top-0 md:right-10 shadow-md md:rounded-md overflow-hidden z-30 ${
+            className={`h-screen border border-white/15 w-screen md:w-96 md:h-[34rem] fixed md:top-80 top-0 md:right-10 shadow-md md:rounded-md overflow-hidden z-30 ${
             chatBoxIsClosed ? "hidden" : ""
             }`}
         >
-            <div className="h-16 w-full bg-violet-500 flex justify-between items-center px-8 z-10 top-0 sticky">
+            <div className="h-16 w-full bg-[#0b101a] flex justify-between items-center px-8 z-10 top-0 sticky ">
             <div className="flex flex-col justify-center">
                 <h1 className="font-semibold text-sm">Qzseeker bot</h1>
                 <p className="text-sm">Ask me a question</p>
@@ -116,7 +116,7 @@ function Chat() {
                 className="h-3 text-white cursor-pointer"
             />
             </div>
-            <div className="md:h-3/5 h-full md:min-w-1/4 w-full backdrop-blur-sm rounded-b-md bg-white/10 overflow-auto">
+            <div className="md:h-[30rem] h-full md:min-w-1/4 w-full backdrop-blur-sm rounded-b-md bg-white/10 overflow-auto">
                     {messages.map((message, index) => (
                     <ul
                         key={index}
@@ -125,11 +125,11 @@ function Chat() {
                         }`}
                     >
                         <li
-                        className={` font-semibold relative top-2 shadow-md flex mx-4 my-2 p-3 w-max transition duration-150 ease-in
+                        className={`relative top-2 shadow-md flex mx-4 my-2 p-3 w-max transition duration-150 ease-in
                                         ${
                                         message.isUser
-                                            ? "bg-transparent text-violet-400 border border-violet-400 rounded-full"
-                                            : "bg-white text-violet-400 rounded-md"
+                                            ? "bg-transparent text-white border border-[#0b101a] rounded-full"
+                                            : "bg-[#0b101a] text-white rounded-md"
                                         }
                                         `}
                         >
@@ -144,7 +144,7 @@ function Chat() {
                             <li key={question.id}>
                             <button
                                 onClick={() => handleSelectQuestion(question)}
-                                className="w-max border border-violet-400 rounded-full text-violet-400 p-3 m-4 font-semibold flex flex-col"
+                                className="w-max border border-[#0b101a] rounded-full text-white p-3 m-4 flex flex-col"
                             >
                                 {question.question}
                             </button>

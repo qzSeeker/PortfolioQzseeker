@@ -12,9 +12,9 @@ function Projects() {
       link: "https://github.com/qzSeeker/Tic-Tac-Toe",
       tech: (
         <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="border border-violet-400 p-2 rounded">ReactJS</li>
-          <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
-          <li className="border border-violet-400 p-2 rounded">Zustand</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">ReactJS</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">TailwindCSS</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">Zustand</li>
         </ul>
       ),
     },
@@ -33,9 +33,9 @@ function Projects() {
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
         <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="border border-violet-400 p-2 rounded">HTML</li>
-          <li className="border border-violet-400 p-2 rounded">CSS</li>
-          <li className="border border-violet-400 p-2 rounded">JavaScript</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">HTML</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">CSS</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">JavaScript</li>
         </ul>
       ),
     },
@@ -48,10 +48,10 @@ function Projects() {
       link: "https://github.com/qzSeeker/React-Chat-App",
       tech: (
         <ul className="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="border border-violet-400 p-2 rounded">React</li>
-          <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
-          <li className="border border-violet-400 p-2 rounded">Firebase</li>
-          <li className="border border-violet-400 p-2 rounded">Zustand</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">React</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">TailwindCSS</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">Firebase</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">Zustand</li>
         </ul>
       ),
     },
@@ -64,9 +64,9 @@ function Projects() {
       link: "#",
       tech: (
         <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="border border-violet-400 p-2 rounded">React</li>
-          <li className="border border-violet-400 p-2 rounded">TailwindCSS</li>
-          <li className="border border-violet-400 p-2 rounded">Firebase</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">React</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">TailwindCSS</li>
+          <li className="bg-[#0b101a] hover:opacity-90 cursor-none p-2 rounded-xl">Firebase</li>
         </ul>
       ),
     },

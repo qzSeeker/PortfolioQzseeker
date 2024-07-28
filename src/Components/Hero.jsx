@@ -75,16 +75,23 @@ function Hero() {
                 rx="88"
                 ry="261.5"
                 cx="340.52325439453125"
-                cy="20.149383544921875"
+                cy="30.149383544921875"
                 fill="hsla(0, 0%, 100%, 1.00)"
               ></ellipse>
               <ellipse
                 rx="88"
                 ry="261.5"
+                cx="460.287524649322"
+                cy="30.94709917517326"
+                fill="hsla(0, 0%, 100%, 1.00)"
+              ></ellipse>
+              {/* <ellipse
+                rx="88"
+                ry="261.5"
                 cx="517.287524649322"
                 cy="65.94709917517326"
                 fill="hsla(272, 72%, 57%, 1.00)"
-              ></ellipse>
+              ></ellipse> */}
             </g>
           </svg>
           <div
@@ -135,11 +142,11 @@ function Hero() {
             </ul>
           </div>
         </div>
-        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-center mb-5 relative">
+        <div className="md:m t-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relative">
             Hello. I'm <span className="">{currentTitle}.</span>
           </h1>
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-violet-400 text-center leading-normal">
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#adc3ef] text-center leading-normal">
             Less copying, more caffeine.
           </h1>
           <p className="text-center mt-8 text-lg tracking-wide px-4">
