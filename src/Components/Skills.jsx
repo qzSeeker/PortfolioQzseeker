@@ -30,7 +30,7 @@ function Skills() {
               {skills.map((item) => (
                 <li
                   key={item.id}
-                  className={`bg-[#0b101a] hover:opacity-90 cursor-none transition-all ease-in p-3 rounded-xl text-center text-sm md:text-md w-max`}
+                  className={`bg-[#0b101a] hover:opacity-90 cursor-pointer transition-all ease-in p-3 rounded-lg text-center text-sm md:text-md w-max`}
                 >
                   {item.skill}
                 </li>
@@ -44,7 +44,7 @@ function Skills() {
               {others.map((item) => (
                 <li
                   key={item.id}
-                  className={`bg-[#0b101a] hover:opacity-90 cursor-none transition-all ease-in p-3 rounded-xl text-center text-sm md:text-md w-max`}
+                  className={`bg-[#0b101a] hover:opacity-90 cursor-pointer transition-all ease-in p-3 rounded-lg text-center text-sm md:text-md w-max`}
                 >
                   {item.skill}
                 </li>
