@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <motion.div className="bg-[#0b101a] fixed top-0 left-0 right-0 h-1" style={{ scaleX }}/>
+      <motion.div className="bg-white/15 fixed top-0 left-0 right-0 h-1" style={{ scaleX }}/>
       <div className="flex flex-col justify-center items-center">
         <Hero />
         <AboutMe />
