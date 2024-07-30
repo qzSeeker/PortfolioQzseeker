@@ -110,7 +110,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
                 {word.text.map((char, index) => (
                     <span
                     key={`char-${index}`}
-                    className={cn(`xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-center mb-5 relative`, word.className)}
+                    className={cn(`xl:text-7xl lg:text-6xl md:text-4xl text-2xl font-extrabold text-[#adc3ef]`,word.className)}
                     >
                     {char}
                     </span>
@@ -124,7 +124,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     };
 
     return (
-        <div className={cn("flex space-x-1 my-6", className)}>
+        <div className={cn("flex space-x-1 my-6 justify-center", className)}>
         <motion.div
             className="overflow-hidden pb-2"
             initial={{
