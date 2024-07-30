@@ -1,7 +1,8 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Chat from "./ChatBot";
+import Chat from "../ChatBot";
 import { Link } from "react-scroll";
+import MainHeader from "./MainHeader";
 
 function Hero() {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
@@ -29,7 +30,7 @@ function Hero() {
       const newIndex = (titleIndex + 1) % title.length;
       setCurrentTitle(title[newIndex]);
       setTitleIndex(newIndex);
-    }, 1400);
+    }, 1800);
 
     return () => clearInterval(interId);
   });
@@ -143,7 +144,7 @@ function Hero() {
           </div>
         </div>
         <div className="md:m t-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relative">
+          {/* <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relative">
             Hello. I'm <span className="">{currentTitle}.</span>
           </h1>
           <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#adc3ef] text-center leading-normal">
@@ -152,7 +153,8 @@ function Hero() {
           <p className="text-center mt-8 text-lg tracking-wide px-4">
             My passion? Learning and creating content that simplifies the
             complex and helps others thrive.
-          </p>
+          </p> */}
+          <MainHeader />
         </div>
       </div>
       {isChatBoxOpen ? <Chat /> : " "}

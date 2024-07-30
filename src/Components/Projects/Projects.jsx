@@ -1,5 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
+import { motion } from "framer-motion";
 
 function Projects() {
   const cards = [
@@ -11,10 +12,31 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/Tic-Tac-Toe",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">ReactJS</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">TailwindCSS</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">Zustand</li>
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            ReactJS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Zustand
+          </motion.li>
         </ul>
       ),
     },
@@ -32,10 +54,31 @@ function Projects() {
       img: "github.png",
       link: "https://github.com/qzSeeker/JavaScript-Projects",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">HTML</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">CSS</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">JavaScript</li>
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            HTML
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            CSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            JavaScript
+          </motion.li>
         </ul>
       ),
     },
@@ -44,14 +87,42 @@ function Projects() {
       description: "Realtime chat application - Currently working on it!",
       webImg: "link.png",
       webLink: "https://github.com/qzSeeker/React-Chat-App",
-      img:"github.png",
+      img: "github.png",
       link: "https://github.com/qzSeeker/React-Chat-App",
       tech: (
-        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">React</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">TailwindCSS</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">Firebase</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">Zustand</li>
+        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            React
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Firebase
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Zustand
+          </motion.li>
         </ul>
       ),
     },
@@ -63,10 +134,31 @@ function Projects() {
       img: "github.png",
       link: "#",
       tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-3 mt-8 text-sm md:text-md">
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">React</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">TailwindCSS</li>
-          <li className="bg-[#0b101a] hover:opacity-90 cursor-pointer p-2 rounded-lg">Firebase</li>
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            React
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Firebase
+          </motion.li>
         </ul>
       ),
     },
