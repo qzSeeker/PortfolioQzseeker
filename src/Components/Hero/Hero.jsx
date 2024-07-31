@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Chat from "../ChatBot";
 import { Link } from "react-scroll";
-import { TypewriterEffectSmooth } from "../ui/typewriterEffect";
+import { FlipWords } from "../ui/flip-words";
 
 function Hero() {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
@@ -36,35 +36,38 @@ function Hero() {
   });
 
   // text animation array
-  const words1 = [
-    {
-    text: "Hello.",
-    className: "text-[#e9f0ff]",
-    },
-    {
-    text: "I'm Arpit",
-    className: "text-[#e9f0ff]",
-    },
+//   const words1 = [
+//     {
+//     text: "Hello.",
+//     className: "text-[#e9f0ff]",
+//     },
+//     {
+//     text: "I'm Arpit",
+//     className: "text-[#e9f0ff]",
+//     },
     
-];
-const words2 = [
-    {
-    text: "Less",
-    className: "text-[#adc3ef] dark:text-[#adc3ef]",
-    },
-    {
-    text: "copying,",
-    className: "text-[#adc3ef] dark:text-[#adc3ef]",
-    },
-    {
-    text: "more",
-    className: "text-[#adc3ef] dark:text-[#adc3ef]",
-    },
-    {
-    text: "caffeine.",
-    className: "text-[#adc3ef] dark:text-[#adc3ef]",
-    },
-];
+// ];
+// const words2 = [
+//     {
+//     text: "Less",
+//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
+//     },
+//     {
+//     text: "copying,",
+//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
+//     },
+//     {
+//     text: "more",
+//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
+//     },
+//     {
+//     text: "caffeine.",
+//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
+//     },
+// ];
+
+// flip-words
+const flipWords = ["Arpit", "qzseeker"];
 
   return (
     <>
@@ -175,13 +178,14 @@ const words2 = [
           </div>
         </div>
         <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
-          <h1 className="flex justify-center ">
-            <TypewriterEffectSmooth words={words1}/>
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relativ">
+              Hello. I'm 
+            <FlipWords words={flipWords}></FlipWords>
           </h1>
-          <h1 className="flex justify-center mb-5">
-            <TypewriterEffectSmooth words={words2}/>
+          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center">
+            Less copying, more caffeine.
           </h1>
-          <p className="text-center mt-8 md:text-xl text-lg tracking-wide px-4">
+          <p className="text-center mt-16 md:text-xl text-lg tracking-wide px-4">
             My passion? Learning and creating content that simplifies the
             complex and helps others thrive.
           </p>
