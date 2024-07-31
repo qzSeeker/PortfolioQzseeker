@@ -181,7 +181,7 @@ const words2 = [
           <h1 className="flex justify-center mb-5">
             <TypewriterEffectSmooth words={words2}/>
           </h1>
-          <p className="text-center mt-8 text-lg tracking-wide px-4">
+          <p className="text-center mt-8 md:text-xl text-lg tracking-wide px-4">
             My passion? Learning and creating content that simplifies the
             complex and helps others thrive.
           </p>
