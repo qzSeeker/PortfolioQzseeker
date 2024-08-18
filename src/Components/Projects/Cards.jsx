@@ -10,6 +10,7 @@ function Cards({
     tech,
     webImg,
     webLink,
+    projectImg,
     ...otherProps
     }) {
         const ref1 = useRef(null);
@@ -24,31 +25,34 @@ function Cards({
                 easeIn: [0.25, 1, 0.25, 1]
             }}
             >
-            <div className="flex justify-between items-center mb-4"
-            
-            >
+            <div className="flex flex-col gap-6 justify-between items-center mb-4">
                 <div className="flex flex-col gap-4 w-full">
-                    <h1 className="">{title}</h1>
-                    <h1 className="text-sm">{description}</h1>
+                    <div className="flex justify-between">
+                        <h1 className="text-xl w-full">{title}</h1>
+                        <div className="flex gap-4">
+                        <Link
+                            to={link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            {...otherProps}
+                        >
+                            {link ? <img className="h-5" src={img} /> : link}
+                        </Link>
+                        <Link
+                            to={webLink}
+                            target="_blank"
+                            rel="noopener noreferrar"
+                            {...otherProps}
+                            className=""
+                        >
+                            {webLink ? <img className="h-5" src={webImg} /> : webLink}
+                        </Link>
+                        </div>
+                    </div>
+                    <h1 className="text-sm tracking-wide">{description}</h1>
                 </div>
-                <div className="flex gap-4 w-max">
-                <Link
-                    to={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    {...otherProps}
-                >
-                    {link ? <img className="h-5" src={img} /> : link}
-                </Link>
-                <Link
-                    to={webLink}
-                    target="_blank"
-                    rel="noopener noreferrar"
-                    {...otherProps}
-                    className=""
-                >
-                    {webLink ? <img className="h-5" src={webImg} /> : webLink}
-                </Link>
+                <div>
+                    <img className="rounded-xl shadow-lg border border-white/15" src={projectImg}/>
                 </div>
             </div>
         <button className="">{tech}</button>
