@@ -7,6 +7,7 @@ import Projects from "./Components/Projects/Projects";
 import Page from "./Components/Qualifications/Page";
 import Skills from "./Components/Skills";
 import Hero from "./Components/Hero/Hero";
+import Certifications from "./Components/Certificates/Certifications";
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -24,6 +25,7 @@ function App() {
         <AboutMe />
         <Skills />
         <Page />
+        <Certifications />
         <Projects />
         <Blogs />
         <Footer />

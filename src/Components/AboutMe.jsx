@@ -5,7 +5,7 @@ function AboutMe() {
     <div className="mx-8 xl:mx-40" id="about">
       <h1 className="text-2xl">About</h1>
       <p className="tracking-wide mt-8">
-        At 19, I'm a self-taught frontend developer from India with a burning
+        At 19, I'm a self-taught MERN Stack developer from India with a burning
         passion for crafting things for the web. Just three months into a coding
         bootcamp, I realized the magic of building something from scratch.
         Fueled by that excitement, I dove headfirst into self-study alongside my
