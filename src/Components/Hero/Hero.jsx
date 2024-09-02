@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Chat from "../ChatBot";
 import { Link } from "react-scroll";
 import { FlipWords } from "../ui/flip-words";
+import Resume from "../Resume/Resume";
 
 function Hero() {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
@@ -177,7 +178,7 @@ const flipWords = ["Arpit", "qzseeker"];
             </ul>
           </div>
         </div>
-        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col mx-1 md:mx-14">
+        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col items-center mx-1 md:mx-14">
           <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relativ">
               Hello. I'm 
             <FlipWords words={flipWords}></FlipWords>
@@ -189,6 +190,7 @@ const flipWords = ["Arpit", "qzseeker"];
             My passion? Learning and creating content that simplifies the
             complex and helps others thrive.
           </p>
+          <Resume />
         </div>
       </div>
       {isChatBoxOpen ? <Chat /> : " "}

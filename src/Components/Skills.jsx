@@ -11,26 +11,26 @@ function Skills() {
   ];
 
   const framLib = [
-    { id: 1, skill: "React.js" },
-    { id: 2, skill: "Next.js" },
-    { id: 3, skill: "Express" },
-    { id: 4, skill: "Tailwind CSS" },
-    { id: 5, skill: "Bootstrap" },
-    { id: 6, skill: "Material UI" },
-    { id: 7, skill: "ShadCn" },
-    { id: 8, skill: "Redux" },
-    { id: 8, skill: "jQuery" },
-    { id: 9, skill: "SASS" },
+    { id: 6, skill: "React.js" },
+    { id: 7, skill: "Next.js" },
+    { id: 8, skill: "Express" },
+    { id: 9, skill: "Tailwind CSS" },
+    { id: 10, skill: "Bootstrap" },
+    { id: 11, skill: "Material UI" },
+    { id: 12, skill: "ShadCn" },
+    { id: 13, skill: "Redux" },
+    { id: 14, skill: "jQuery" },
+    { id: 15, skill: "SASS" },
   ]
 
   const others = [
-    { id: 9, skill: "VS Code" },
-    { id: 10, skill: "Git" },
-    { id: 11, skill: "GitHub" },
-    { id: 12, skill: "Netlify" },
-    { id: 12, skill: "Vercel" },
-    { id: 13, skill: "Firebase" },
-    { id: 13, skill: "MongoDB" },
+    { id: 16, skill: "VS Code" },
+    { id: 17, skill: "Git" },
+    { id: 18, skill: "GitHub" },
+    { id: 19, skill: "Netlify" },
+    { id: 20, skill: "Vercel" },
+    { id: 21, skill: "Firebase" },
+    { id: 22, skill: "MongoDB" },
   ];
 
   const ref1 = useRef(null);
