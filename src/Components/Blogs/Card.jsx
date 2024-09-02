@@ -8,7 +8,7 @@ function Card({title, name, date, duration, link, img, ...otherProps}) {
     const isInView = useInView(ref, {once : true});
 
     return (
-        <motion.div ref={ref} className="h-[max] cursor-pointer w-full p-4 rounded-md bg-white/10 ease-in hover:border border-white/15 duration-200 transition-all  overflow-hidden"
+        <motion.div ref={ref} className="h-[max] cursor-pointer w-full p-4 rounded-md bg-white/10 ease-in hover:border border-white/15 overflow-hidden"
         initial={{ opacity: 0, scale: 0.6 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{

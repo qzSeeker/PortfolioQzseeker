@@ -13,7 +13,7 @@ function Page() {
             <div className='mt-12 mb-10 mx-8 xl:mx-40'>
                 <h1 className='text-2xl mb-8'>Academic Qualification</h1>
                 <div className='grid md:grid-cols-2 gap-4'>
-                    <motion.div ref={ref1} className='w-full h-max bg-white/10 p-8 hover:border border-white/15 rounded-md transition-all ease-in duration-200'
+                    <motion.div ref={ref1} className='w-full h-max bg-white/10 p-8 hover:border border-white/15 rounded-md'
                     initial={{ opacity: 0, scale: 0.6 }}
                     animate={isInView1 ? { opacity: 1, scale: 1 } : {}}
                     transition={{
@@ -28,7 +28,7 @@ function Page() {
                             <h1>JSU, Uttar Pradesh</h1>
                         </div>
                     </motion.div>
-                    <motion.div ref={ref2} className='w-full h-max bg-white/10 p-8 hover:border border-white/15 rounded-md transition-all ease-in duration-200'
+                    <motion.div ref={ref2} className='w-full h-max bg-white/10 p-8 hover:border border-white/15 rounded-md'
                     initial={{ opacity: 0, scale: 0.6 }}
                     animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
                     transition={{

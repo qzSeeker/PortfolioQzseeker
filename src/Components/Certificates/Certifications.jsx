@@ -1,13 +1,30 @@
-import React from 'react'
+import { useInView, motion } from 'framer-motion';
+import React, { useRef } from 'react'
 
 function Certifications() {
+    const ref = useRef(null);
+    const isInView = useInView(ref, {once : true});
+
+    const ref2 = useRef(null);
+    const isInView2 = useInView(ref2, {once : true});
+
+    const ref3 = useRef(null);
+    const isInView3 = useInView(ref3, {once : true});
+
     return (
         <div className='w-full'>
             <div className='h-max mt-10 mb-10 mx-8 xl:mx-40'>
                 <h1 className='text-2xl mb-8'>Licenses & certificates</h1>
 
                 <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition duration-200 will-change-transform ease-in hover:border border-white/15" >
+                <motion.div ref={ref} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
+                initial={{ opacity: 0, scale: 0.6 }}
+                animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                transition={{
+                    duration: 0.3,
+                    delay: 0.3,
+                    easeIn: [0.25, 1, 0.25, 1]
+                }}>
                     <div>
                         <h1 className='text-lg mb-4'>FrontEnd Development Libraries</h1>
                         <p className='text-sm'>freeCodeCamp</p>
@@ -21,9 +38,16 @@ function Certifications() {
                             </button>
                         </a>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition duration-200 will-change-transform ease-in hover:border border-white/15" >
+                <motion.div ref={ref2} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
+                initial={{ opacity: 0, scale: 0.6 }}
+                animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
+                transition={{
+                    duration: 0.3,
+                    delay: 0.3,
+                    easeIn: [0.25, 1, 0.25, 1]
+                }}>
                     <div>
                         <h1 className='text-lg mb-4'>Back End Development and APIs</h1>
                         <p className='text-sm'>freeCodeCamp</p>
@@ -36,9 +60,16 @@ function Certifications() {
                             </button>
                         </a>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition duration-200 will-change-transform ease-in hover:border border-white/15" >
+                <motion.div ref={ref3} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
+                initial={{ opacity: 0, scale: 0.6 }}
+                animate={isInView3 ? { opacity: 1, scale: 1 } : {}}
+                transition={{
+                    duration: 0.3,
+                    delay: 0.3,
+                    easeIn: [0.25, 1, 0.25, 1]
+                }}>
                     <div>
                         <h1 className='text-lg mb-4'>Fundamentals of digital marketing</h1>
                         <p className='text-sm'>Google</p>
@@ -51,7 +82,7 @@ function Certifications() {
                             </button>
                         </a>
                     </div>
-                </div>
+                </motion.div>
                 </div>
 
             </div>

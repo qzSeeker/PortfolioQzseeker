@@ -47,7 +47,7 @@ function Skills() {
       <div className="mt-20 mb-10 mx-8 xl:mx-40">
         <h1 className="text-2xl mb-8">Skills</h1>
         <div className="grid md:grid-cols-2 gap-4">
-          <motion.div ref={ref1} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition-all duration-200 will-change-transform ease-in hover:border border-white/15"
+          <motion.div ref={ref1} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
           initial={{ opacity: 0, scale: 0.6 }}
           animate={isInView1 ? { opacity: 1, scale: 1 } : {}}
           transition={{
@@ -72,7 +72,7 @@ function Skills() {
             </ul>
           </motion.div>
 
-          <motion.div ref={ref2} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition-all duration-200 will-change-transform ease-in hover:border border-white/15"
+          <motion.div ref={ref2} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
           initial={{ opacity: 0, scale: 0.6 }}
           animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
           transition={{
@@ -97,7 +97,7 @@ function Skills() {
             </ul>
           </motion.div>
 
-          <motion.div ref={ref3} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg transition-all hover:border border-white/15"
+          <motion.div ref={ref3} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
           initial={{ opacity: 0, scale: 0.6 }}
           animate={isInView3 ? { opacity: 1, scale: 1 } : {}}
           transition={{

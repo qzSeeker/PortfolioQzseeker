@@ -16,7 +16,7 @@ function Cards({
         const ref1 = useRef(null);
         const isInView1 = useInView(ref1, {once : true});
     return (
-        <motion.div ref={ref1} className="h-max flex flex-col justify-around items-top p-6 w-full rounded-md bg-white/10 ease-in hover:border border-white/15 transition-all overflow-hidden"
+        <motion.div ref={ref1} className="h-max flex flex-col justify-around items-top p-6 w-full rounded-md bg-white/10 ease-in hover:border border-white/15 overflow-hidden"
         initial={{ opacity: 0, scale: 0.6 }}
             animate={isInView1 ? { opacity: 1, scale: 1 } : {}}
             transition={{
