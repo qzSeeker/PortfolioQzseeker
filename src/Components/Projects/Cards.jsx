@@ -49,7 +49,7 @@ function Cards({
                         </Link>
                         </div>
                     </div>
-                    <h1 className="text-sm tracking-wide">{description}</h1>
+                    <div className="text-sm tracking-wide">{description}</div>
                 </div>
                 <div>
                     <img className="rounded-xl shadow-lg border border-white/15" src={projectImg}/>

@@ -8,10 +8,10 @@ function Projects() {
       title: "chat.if.i - Real-time Chat Application",
       description: "Developed a real-time chat application using React.js, highlighting advanced front-end development skills. Integrated Firebase for secure user authentication and authorization, ensuring a seamless login and signup experience. Leveraged Tailwind CSS for responsive and efficient design, demonstrating expertise in modern CSS frameworks. Utilized Firebase Realtime Database for instant message updates, facilitating smooth and interactive user communication. Designed a user-centric interface with intuitive navigation, emphasizing real-time message display for an engaging user experience.",
       webImg: "link.png",
-      webLink: "https://github.com/qzSeeker/React-Chat-App",
+      webLink: "https://chat-if-i.netlify.app",
       img: "github.png",
       link: "https://github.com/qzSeeker/React-Chat-App",
-      projectImg: "Screenshot 2024-08-18 145151.png",
+      projectImg: "Screenshot 2024-09-06 145731.png",
       tech: (
         <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
           <motion.li
@@ -20,7 +20,7 @@ function Projects() {
             transition={{ type: "spring", stiffness: 200, damping: 8 }}
             className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
           >
-            React
+            ReactJs
           </motion.li>
           <motion.li
             whileHover={{ scale: 1.2 }}
@@ -45,6 +45,89 @@ function Projects() {
             className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
           >
             Framer
+          </motion.li>
+        </ul>
+      ),
+    },
+    {
+      title: "Front End Development Libraries Projects",
+      description: (
+        <div className="text-sm gap-4 grid">
+          <div className="flex gap-3">
+            Random Quote Machine
+            <a href="https://random-quote-machine-gules-sigma.vercel.app/" className="underline text-green-500">Preview</a>
+          </div>
+          <div className="flex gap-3">
+            Markdown Previewer
+            <a href="https://markdown-previewer-seven-sigma.vercel.app/" className="underline text-green-500">Preview</a>
+          </div>
+          <div className="flex gap-3">
+            Drom Machine
+            <a href="https://drum-machine-bay.vercel.app/" className="underline text-green-500">Preview</a>
+          </div>
+          <div className="flex gap-3">
+            JavaScript Calculator
+            <a href="https://vercel.com/qzseekers-projects/java-script-calc" className="underline text-green-500">Preview</a>
+          </div>
+          <div className="flex gap-3">
+            25 + 5 Clock
+            <a href="https://25-5-clock-rho.vercel.app/" className="underline text-green-500">Preview</a>
+          </div>
+        </div>
+      ),
+      webImg: "link.png",
+      webLink: "#",
+      img: "github.png",
+      link: "https://github.com/qzSeeker",
+      tech: (
+        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Bootstrap
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            React
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            jQuery
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Redux
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            React and Redux
           </motion.li>
         </ul>
       ),
@@ -85,50 +168,7 @@ function Projects() {
           </motion.li>
         </ul>
       ),
-    },
-    {
-      title: "JavaScript Projects",
-      description: (
-        <ul className="text-sm gap-4 md:flex">
-          <li>- Quote Generator</li>
-          <li>- Stopwatch</li>
-          <li>- Todo List</li>
-        </ul>
-      ),
-      webImg: "link.png",
-      webLink: "https://github.com/qzSeeker/JavaScript-Projects",
-      img: "github.png",
-      link: "https://github.com/qzSeeker/JavaScript-Projects",
-      tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            HTML
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            CSS
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            JavaScript
-          </motion.li>
-        </ul>
-      ),
-    },
-    
+    },    
     {
       title: "Finance SaaS App - MERN Stack",
       description: "Project status - Currently Working on it!",
