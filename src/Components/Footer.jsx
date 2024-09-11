@@ -6,7 +6,7 @@ function Footer() {
       <div className="h-[2px] w-full bg-white/15 mb-6"></div>
       <div className="flex items-center justify-between w-full">
         <h1 className="text-[10px]">
-          Copyright © 2024 QzSeeker
+        Designed & Developed with ❤️ by @qzseeker
         </h1>
         <div className="flex w-max gap-2">
           <a href="https://www.linkedin.com/in/arpit-yadav-29b5a0257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">

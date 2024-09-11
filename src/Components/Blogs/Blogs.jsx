@@ -4,6 +4,14 @@ import Card from "./Card";
 function Blogs() {
     const cards = [
         {
+            title: "State Management in React: Making Sense of Context API",
+            name: "QzSeeker",
+            date: "Sep 11 2024",
+            duration: "3 min read",
+            link: "https://qzseeker.hashnode.dev/state-management-in-react-making-sense-of-context-api",
+            img: "external-link.png"
+        },
+        {
         title: "A Beginner's Guide to JavaScript for Web Development.",
         name: "QzSeeker",
         date: "Apr 13 2024",
@@ -12,19 +20,11 @@ function Blogs() {
         img: "external-link.png"
         },
         {
-        title: "Title",
-        name: "QzSeeker",
-        date: "- - 2024",
-        duration: "0 min read",
-        link: "https://qzseeker.hashnode.dev/a-beginners-guide-to-javascript-for-web-development",
-        img: "external-link.png"
-        },
-        {
         title: "Title 1",
         name: "QzSeeker",
         date: "- - 2024",
         duration: "0 min read",
-        link: "https://qzseeker.hashnode.dev/a-beginners-guide-to-javascript-for-web-development",
+        link: "",
         img: "external-link.png"
         },
     ];
