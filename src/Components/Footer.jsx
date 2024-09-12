@@ -5,7 +5,7 @@ function Footer() {
     <div className="w-full px-8 xl:px-40 mb-10">
       <div className="h-[2px] w-full bg-white/15 mb-6"></div>
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-0 items-center justify-between w-full">
-        <h1 className="text-[10px]">
+        <h1 className="text-xs">
         Designed & Developed with ❤️ by @qzseeker
         </h1>
         <div className="flex w-max gap-2">
