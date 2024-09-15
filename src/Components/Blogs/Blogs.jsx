@@ -4,6 +4,14 @@ import Card from "./Card";
 function Blogs() {
     const cards = [
         {
+            title: "Making APIs with MERN Stack",
+            name: "QzSeeker",
+            date: "Sep 15 2024",
+            duration: "3 min read",
+            link: "https://qzseeker.hashnode.dev/making-apis-with-mern-stack",
+            img: "external-link.png"
+        },
+        {
             title: "State Management in React: Making Sense of Context API",
             name: "QzSeeker",
             date: "Sep 11 2024",
@@ -20,7 +28,7 @@ function Blogs() {
         img: "external-link.png"
         },
         {
-        title: "Title 1",
+        title: "Title",
         name: "QzSeeker",
         date: "- - 2024",
         duration: "0 min read",
