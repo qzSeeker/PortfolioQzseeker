@@ -3,8 +3,8 @@ import React from 'react'
 function Resume() {
     const handleDownload = () => {
         const link = document.createElement('a');
-        link.href = 'files/Web Dev Resume.pdf';
-        link.download = 'Web Dev Resume.pdf';
+        link.href = 'files/ArpitYadav-Resume.pdf';
+        link.download = 'ArpitYadav-Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
