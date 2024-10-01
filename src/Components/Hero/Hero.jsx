@@ -68,7 +68,7 @@ function Hero() {
 // ];
 
 // flip-words
-const flipWords = ["Arpit", "QzSeeker", "Frontend Dev", "MERN Dev"];
+const flipWords = ["Arpit", "QzSeeker", "MERN-Stack", "Developer"];
 
   return (
     <>
