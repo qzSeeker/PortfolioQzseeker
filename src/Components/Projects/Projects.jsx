@@ -6,12 +6,12 @@ function Projects() {
   const cards = [
     {
       title: "chat.if.i - Real-time Chat Application",
-      description: "Developed a real-time chat application using React.js, highlighting advanced front-end development skills. Integrated Firebase for secure user authentication and authorization, ensuring a seamless login and signup experience. Leveraged Tailwind CSS for responsive and efficient design, demonstrating expertise in modern CSS frameworks. Utilized Firebase Realtime Database for instant message updates, facilitating smooth and interactive user communication. Designed a user-centric interface with intuitive navigation, emphasizing real-time message display for an engaging user experience.",
+      // description: "Developed a real-time chat application using React.js, highlighting advanced front-end development skills. Integrated Firebase for secure user authentication and authorization, ensuring a seamless login and signup experience. Leveraged Tailwind CSS for responsive and efficient design, demonstrating expertise in modern CSS frameworks. Utilized Firebase Realtime Database for instant message updates, facilitating smooth and interactive user communication. Designed a user-centric interface with intuitive navigation, emphasizing real-time message display for an engaging user experience.",
       webImg: "link.png",
       webLink: "https://chat-if-i.netlify.app",
       img: "github.png",
       link: "https://github.com/qzSeeker/React-Chat-App",
-      projectImg: "Screenshot 2024-09-06 145731.png",
+      projectImg: "chatifi.png",
       tech: (
         <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
           <motion.li
@@ -50,7 +50,95 @@ function Projects() {
       ),
     },
     {
-      title: "Front End Development Libraries Projects",
+      title: "userm-hub - user management CRUD application",
+      webImg: "link.png",
+      webLink: "https://userm-hub.netlify.app",
+      img: "github.png",
+      link: "https://github.com/qzSeeker/React-User-Management-App",
+      projectImg: "userm-hub.png",
+      tech: (
+        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            ReactJs
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            ChakraUI
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TypeScript
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            API's
+          </motion.li>
+        </ul>
+      ),
+    },
+    {
+      title: "internSteps - Building",
+      webImg: "link.png",
+      webLink: "https://userm-hub.netlify.app",
+      img: "github.png",
+      link: "https://github.com/qzSeeker/React-User-Management-App",
+      projectImg: "internSteps.png",
+      tech: (
+        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            NextJs
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TypeScript
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            Framer
+          </motion.li>
+        </ul>
+      ),
+    },
+    {
+      title: "Front End Development Libraries",
       description: (
         <div className="text-sm gap-4 grid">
           <div className="flex gap-3">
@@ -131,96 +219,7 @@ function Projects() {
           </motion.li>
         </ul>
       ),
-    },
-    {
-      title: "Tic-tac-toi",
-      description: "Made this simple XO-Blast game using React and TailwindCSS",
-      webImg: "link.png",
-      webLink: "https://xo-blast.netlify.app",
-      img: "github.png",
-      link: "https://github.com/qzSeeker/Tic-Tac-Toe",
-      projectImg: "Screenshot 2024-08-18 154300.png",
-      tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            ReactJS
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            TailwindCSS
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            Zustand
-          </motion.li>
-        </ul>
-      ),
-    },    
-    {
-      title: "Finance SaaS App - MERN Stack",
-      description: "Project status - Currently Working on it!",
-      webImg: "link.png",
-      webLink: "#",
-      img: "github.png",
-      link: "#",
-      tech: (
-        <ul className="grid sm:grid-cols-3 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            NextJs
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            TypeScript
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            TailwindCSS
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            MongoDB
-          </motion.li>
-          <motion.li
-            whileHover={{ scale: 1.2 }}
-            whileTap={{ scale: 0.8 }}
-            transition={{ type: "spring", stiffness: 200, damping: 8 }}
-            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
-          >
-            ShadCn
-          </motion.li>
-        </ul>
-      ),
-    },
+    }
   ];
   return (
     <div className="w-full" id="work">
