@@ -94,6 +94,42 @@ function Projects() {
       ),
     },
     {
+      title: "qzSeeker.taskflow",
+      webImg: "link.png",
+      webLink: "https://qzseeker-taskflow.vercel.app/",
+      img: "github.png",
+      link: "https://github.com/qzSeeker/Tasks-Management-App",
+      projectImg: "taskflow.png",
+      tech: (
+        <ul className="grid sm:grid-cols-4 grid-cols-2 gap-8 mt-8 text-sm md:text-md">
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            NextJs
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TailwindCSS
+          </motion.li>
+          <motion.li
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            transition={{ type: "spring", stiffness: 200, damping: 8 }}
+            className="bg-[#0b101a] cursor-pointer p-2 rounded-lg"
+          >
+            TypeScript
+          </motion.li>
+        </ul>
+      ),
+    },
+    {
       title: "internSteps - Building",
       webImg: "link.png",
       webLink: "https://userm-hub.netlify.app",

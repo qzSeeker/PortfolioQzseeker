@@ -51,9 +51,14 @@ function Cards({
                     </div>
                     <div className="text-sm tracking-wide">{description}</div>
                 </div>
-                <div>
+                <Link
+                    to={webLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    {...otherProps}
+                >
                     <img className="rounded-xl shadow-lg border border-white/15" src={projectImg}/>
-                </div>
+                </Link>
             </div>
         <button className="">{tech}</button>
         </motion.div>
