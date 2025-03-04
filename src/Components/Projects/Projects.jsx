@@ -165,13 +165,13 @@ function Project() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
+              className="fixed px-2 inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm"
             >
               <motion.div
                 initial={{ scale: 0.9 }}
                 animate={{ scale: 1 }}
                 exit={{ scale: 0.9 }}
-                className="bg-[#0b0c10] rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8"
+                className="bg-black/50 border border-white/25 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto p-8"
               >
                 <div className="flex justify-between items-center mb-6">
                   <h2 className="text-2xl font-bold">{selectedProject.title}</h2>

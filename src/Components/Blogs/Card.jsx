@@ -31,11 +31,9 @@ const Card = ({ title, name, date, duration, link }) => {
             )}
             </div>
 
-            <div className="flex items-center text-white/70 text-sm space-x-3">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-2 items-center text-white/70 text-sm md:space-x-3">
             <span>{name}</span>
-            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
             <span>{date}</span>
-            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
             <div className="flex items-center space-x-1">
                 <Clock className="w-4 h-4" />
                 <span>{duration}</span>

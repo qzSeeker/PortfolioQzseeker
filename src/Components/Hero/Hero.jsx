@@ -170,7 +170,7 @@ const socialLinks = [
               {`Hello. I'm`} 
             <FlipWords words={flipWords}></FlipWords>
           </h1>
-          <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-br from-[#e9f0ff] to-[#64748b] bg-clip-text text-transparent text-center">
+          <h1 className="text-2xl md:text-3xl font-extrabold bg-gradient-to-br from-[#e9f0ff] to-[#64748b] bg-clip-text text-transparent text-center">
             A Frontend Engineer Specializing in AI-Driven User Experiences.
           </h1>
 
