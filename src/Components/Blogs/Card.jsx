@@ -1,31 +1,52 @@
+/* eslint-disable react/prop-types */
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Clock, ExternalLink } from "lucide-react";
 
-import { Link } from 'react-router-dom'
-import React, { useRef } from 'react'
-import { useInView, motion } from 'framer-motion';
-
-function Card({title, name, date, duration, link, img, ...otherProps}) {
-    const ref = useRef(null);
-    const isInView = useInView(ref, {once : true});
-
+const Card = ({ title, name, date, duration, link }) => {
     return (
-        <motion.div ref={ref} className="h-[max] cursor-pointer w-full p-4 rounded-md bg-white/10 ease-in hover:border border-white/15 overflow-hidden"
-        initial={{ opacity: 0, scale: 0.6 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{
-                duration: 0.3,
-                delay: 0.3,
-                easeIn: [0.25, 1, 0.25, 1]
-            }}
-            >
-            <h1 className="">{title}</h1>
-            <p className='mt-2 text-sm'>
-                {date} • {duration}
-            </p>
-                <Link to={link} target="_blank" rel="noopener noreferrer" {...otherProps} className="text-blue-500 hover:underline">
-                    {link.includes('http') ? <img className='h-5 mt-5' src={img}/> : link}
+        <motion.div
+        className="group relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 border border-white/10 rounded-xl overflow-hidden transition-all duration-300 hover:border-white/20 hover:shadow-lg"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+            duration: 0.5,
+            ease: "easeOut",
+        }}
+        >
+        <div className="p-6 relative z-10">
+            <div className="flex justify-between items-start mb-4">
+            <h2 className="text-lg md:text-xl text-white/90 group-hover:text-white transition-colors">
+                {title}
+            </h2>
+            {link && (
+                <Link
+                to={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/60 hover:text-white transition-colors"
+                >
+                <ExternalLink className="w-5 h-5" />
                 </Link>
-        </motion.div>
-    )
-}
+            )}
+            </div>
 
-export default Card
+            <div className="flex items-center text-white/70 text-sm space-x-3">
+            <span>{name}</span>
+            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+            <span>{date}</span>
+            <div className="w-1 h-1 bg-white/50 rounded-full"></div>
+            <div className="flex items-center space-x-1">
+                <Clock className="w-4 h-4" />
+                <span>{duration}</span>
+            </div>
+            </div>
+        </div>
+
+        {/* Subtle overlay effect */}
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-900/10 to-purple-900/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0"></div>
+        </motion.div>
+    );
+};
+
+export default Card;

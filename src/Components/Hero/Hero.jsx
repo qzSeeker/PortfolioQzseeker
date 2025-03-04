@@ -1,9 +1,12 @@
+/* eslint-disable no-unused-vars */
 "use client";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Chat from "../ChatBot";
 import { Link } from "react-scroll";
 import { FlipWords } from "../ui/flip-words";
-import Resume from "../Resume/Resume";
+// import Resume from "../Resume/Resume";
+import { motion } from "framer-motion";
+import { Download, Github, Linkedin, Send, Twitter } from "lucide-react";
 
 function Hero() {
   const [isChatBoxOpen, setIsChatBoxOpen] = useState(false);
@@ -36,50 +39,34 @@ function Hero() {
     return () => clearInterval(interId);
   });
 
-  // text animation array
-//   const words1 = [
-//     {
-//     text: "Hello.",
-//     className: "text-[#e9f0ff]",
-//     },
-//     {
-//     text: "I'm Arpit",
-//     className: "text-[#e9f0ff]",
-//     },
-    
-// ];
-// const words2 = [
-//     {
-//     text: "Less",
-//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
-//     },
-//     {
-//     text: "copying,",
-//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
-//     },
-//     {
-//     text: "more",
-//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
-//     },
-//     {
-//     text: "caffeine.",
-//     className: "text-[#adc3ef] dark:text-[#adc3ef]",
-//     },
-// ];
-
 // flip-words
-const flipWords = ["Arpit", "QzSeeker", "MERN-Stack", "Developer"];
+const flipWords = ["Arpit-Yadav", "QzSeeker"];
+
+// Social Media Links
+const socialLinks = [
+  { 
+    icon: <Github className="w-6 h-6" />, 
+    href: "https://github.com/qzSeeker" 
+  },
+  { 
+    icon: <Linkedin className="w-6 h-6" />, 
+    href: "https://linkedin.com/in/https://linkedin.com/in/arpit-yadav-29b5a0257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+  },
+  { 
+    icon: <Twitter className="w-6 h-6" />, 
+    href: "https://twitter.com/qzseeker" 
+  }
+];
 
   return (
     <>
       <div id="hero">
-        <div className="h-max w-full flex items-center justify-center py-10 mt-8">
+        <div className="h-max w-full flex items-center justify-center py-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="absolute h-full w-full"
             version="1.1"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            xmlns:svgjs="http://svgjs.dev/svgjs"
             viewBox="0 0 800 450"
             opacity="0.38"
           >
@@ -178,20 +165,64 @@ const flipWords = ["Arpit", "QzSeeker", "MERN-Stack", "Developer"];
             </ul>
           </div>
         </div>
-        <div className="md:mt-48 md:mb-56 mt-20 mb-20 flex flex-col items-center mx-1 md:mx-14">
+        <div className="py-20 md:py-28 max-w-6xl flex flex-col items-center mx-1 md:mx-14">
           <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center mb-5 relative">
-              Hello. I'm 
+              {`Hello. I'm`} 
             <FlipWords words={flipWords}></FlipWords>
           </h1>
-          <h1 className="xl:text-7xl lg:text-6xl md:text-5xl text-3xl font-extrabold text-[#e9f0ff] text-center">
-            Less copying, more caffeine.
+          <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-br from-[#e9f0ff] to-[#64748b] bg-clip-text text-transparent text-center">
+            A Frontend Engineer Specializing in AI-Driven User Experiences.
           </h1>
-          <p className="text-center mt-16 md:text-xl text-lg tracking-wide px-4">
+
+          <p className="text-center mt-10 md:text-xl text-lg tracking-wide px-4">
             My passion? Learning and creating content that simplifies the
             complex and helps others thrive.
           </p>
-          <Resume />
+          
+          {/* Action Buttons */}
+        <motion.div 
+          className="mt-10 flex items-center gap-6 z-40"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          <button className="flex items-center gap-2 border cursor-pointer border-white/15 px-5 py-3 rounded-full hover:bg-white/10 transition">
+            Download CV
+          </button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={500}
+          >
+            <button className="flex items-center gap-2 border cursor-pointer border-white/15 px-5 py-3 rounded-full hover:bg-white/10 transition">
+              Contact Me
+            </button>
+          </Link>
+        </motion.div>
+
+        {/* Social Media Links */}
+        <motion.div 
+          className="mt-10 flex items-center gap-6"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.7, duration: 0.5 }}
+        >
+          {socialLinks.map((link, index) => (
+            <a 
+              key={index} 
+              href={link.href} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-white transition"
+            >
+              {link.icon}
+            </a>
+          ))}
+        </motion.div>
         </div>
+
       </div>
       {isChatBoxOpen ? <Chat /> : " "}
     </>

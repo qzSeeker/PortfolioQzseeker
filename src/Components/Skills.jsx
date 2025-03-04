@@ -1,130 +1,101 @@
-import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { Code, Layers, Wrench } from "lucide-react";
+import { useRef } from "react";
 
-function Skills() {
-  const languages = [
-    { id: 1, skill: "HTML5" },
-    { id: 2, skill: "CSS3" },
-    { id: 3, skill: "JavaScript" },
-    { id: 4, skill: "TypeScript" },
-    { id: 5, skill: "Node.js" },
+const SkillsSection = () => {
+  const skillCategories = [
+    {
+      title: "Programming Languages",
+      icon: <Code className="w-6 h-6 text-blue-400" />,
+      skills: [
+        { name: "JavaScript", level: 90, color: "bg-yellow-500" },
+        { name: "TypeScript", level: 80, color: "bg-blue-500" },
+        { name: "HTML5", level: 95, color: "bg-orange-500" },
+        { name: "CSS3", level: 90, color: "bg-blue-600" },
+        { name: "Node.js", level: 75, color: "bg-green-500" }
+      ]
+    },
+    {
+      title: "Frameworks & Libraries",
+      icon: <Layers className="w-6 h-6 text-purple-400" />,
+      skills: [
+        { name: "React.js", level: 90, color: "bg-cyan-500" },
+        { name: "Next.js", level: 85, color: "bg-gray-800" },
+        { name: "Express", level: 75, color: "bg-green-600" },
+        { name: "Redux", level: 80, color: "bg-purple-600" },
+        { name: "Tailwind CSS", level: 85, color: "bg-teal-500" }
+      ]
+    },
+    {
+      title: "Tools & Platforms",
+      icon: <Wrench className="w-6 h-6 text-green-400" />,
+      skills: [
+        { name: "Git", level: 85, color: "bg-orange-600" },
+        { name: "GitHub", level: 90, color: "bg-gray-700" },
+        { name: "VS Code", level: 95, color: "bg-blue-700" },
+        { name: "Netlify", level: 80, color: "bg-teal-600" },
+        { name: "Vercel", level: 85, color: "bg-gray-900" }
+      ]
+    }
   ];
 
-  const framLib = [
-    { id: 6, skill: "React.js" },
-    { id: 7, skill: "Next.js" },
-    { id: 8, skill: "Express" },
-    { id: 9, skill: "Tailwind CSS" },
-    { id: 10, skill: "Bootstrap" },
-    { id: 11, skill: "Material UI" },
-    { id: 12, skill: "ShadCn" },
-    { id: 13, skill: "Redux" },
-    { id: 14, skill: "jQuery" },
-    { id: 15, skill: "SASS" },
-  ]
-
-  const others = [
-    { id: 16, skill: "VS Code" },
-    { id: 17, skill: "Git" },
-    { id: 18, skill: "GitHub" },
-    { id: 19, skill: "Netlify" },
-    { id: 20, skill: "Vercel" },
-    { id: 21, skill: "Firebase" },
-    { id: 22, skill: "MongoDB" },
-  ];
-
-  const ref1 = useRef(null);
-  const isInView1 = useInView(ref1, {once : true});
-
-  const ref2 = useRef(null);
-  const isInView2 = useInView(ref2, {once : true});
-
-  const ref3 = useRef(null);
-  const isInView3 = useInView(ref3, {once : true});
+  const containerRef = useRef(null);
+  const isInView = useInView(containerRef, { once: true });
 
   return (
-    <div className="w-full">
-      <div className="mt-20 mb-10 mx-8 xl:mx-40">
-        <h1 className="text-2xl mb-8">Skills</h1>
-        <div className="grid md:grid-cols-2 gap-4">
-          <motion.div ref={ref1} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
-          initial={{ opacity: 0, scale: 0.6 }}
-          animate={isInView1 ? { opacity: 1, scale: 1 } : {}}
-          transition={{
-            duration: 0.3,
-            delay: 0.3,
-            easeIn: [0.25, 1, 0.25, 1]
-          }}
-          >
-            <h1>Languages</h1>
-            <ul className="flex flex-wrap gap-4">
-              {languages.map((item) => (
-                <motion.li
-                  key={item.id}
-                  className={`bg-[#0b101a] cursor-pointer p-3 rounded-lg text-center text-sm md:text-md w-max`}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.8 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 8 }}
-                >
-                  {item.skill}
-                </motion.li>
+    <div className="w-full text-white py-16 ">
+      <div className="xl:mx-40 mx-8">
+        <motion.h2 
+          className="text-2xl mb-12"
+          initial={{ opacity: 0, y: -50 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.5 }}
+        >
+          Technical Skills
+        </motion.h2>
+        
+        <div 
+          ref={containerRef} 
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {skillCategories.map((category, categoryIndex) => (
+            <motion.div 
+              key={category.title}
+              className="bg-white/5 p-6 rounded-xl border border-white/10"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={isInView ? { opacity: 1, scale: 1 } : {}}
+              transition={{ 
+                duration: 0.5, 
+                delay: categoryIndex * 0.2 
+              }}
+            >
+              <div className="flex items-center mb-6">
+                {category.icon}
+                <h3 className="ml-3 text-xl font-semibold">{category.title}</h3>
+              </div>
+              
+              {category.skills.map((skill) => (
+                <div key={skill.name} className="mb-4">
+                  <div className="flex justify-between text-sm mb-1">
+                    <span>{skill.name}</span>
+                    <span>{skill.level}%</span>
+                  </div>
+                  <div className="w-full bg-gray-700 rounded-full h-2.5">
+                    <motion.div 
+                      className={`${skill.color} h-2.5 rounded-full`}
+                      initial={{ width: 0 }}
+                      animate={isInView ? { width: `${skill.level}%` } : { width: 0 }}
+                      transition={{ duration: 1, delay: 0.5 }}
+                    />
+                  </div>
+                </div>
               ))}
-            </ul>
-          </motion.div>
-
-          <motion.div ref={ref2} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
-          initial={{ opacity: 0, scale: 0.6 }}
-          animate={isInView2 ? { opacity: 1, scale: 1 } : {}}
-          transition={{
-            duration: 0.3,
-            delay: 0.3,
-            easeIn: [0.25, 1, 0.25, 1]
-          }}
-          >
-            <h1>Frameworks & Libraries</h1>
-            <ul className="flex flex-wrap gap-4">
-              {framLib.map((item) => (
-                <motion.li
-                  key={item.id}
-                  className={`bg-[#0b101a] cursor-pointer p-3 rounded-lg text-center text-sm md:text-md w-max`}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.8 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 8 }}
-                >
-                  {item.skill}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
-
-          <motion.div ref={ref3} className="bg-white/10 p-4 flex flex-col gap-4 rounded-lg hover:border border-white/15"
-          initial={{ opacity: 0, scale: 0.6 }}
-          animate={isInView3 ? { opacity: 1, scale: 1 } : {}}
-          transition={{
-            duration: 0.3,
-            delay: 0.3,
-            easeIn: [0.25, 1, 0.25, 1]
-          }}
-          >
-            <h1>Other tools</h1>
-            <ul className="flex flex-wrap gap-4">
-              {others.map((item) => (
-                <motion.li
-                  key={item.id}
-                  className={`bg-[#0b101a] cursor-pointer p-3 rounded-lg text-center text-sm md:text-md w-max`}
-                  whileHover={{ scale: 1.2 }}
-                  whileTap={{ scale: 0.8 }}
-                  transition={{ type: "spring", stiffness: 200, damping: 8 }}
-                >
-                  {item.skill}
-                </motion.li>
-              ))}
-            </ul>
-          </motion.div>
+            </motion.div>
+          ))}
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default Skills;
+export default SkillsSection;

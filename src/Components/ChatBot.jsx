@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
     const greetingMessages = [
     "Hello!",
@@ -40,10 +40,11 @@ import React, { useEffect, useRef, useState } from "react";
     },
 ];
 
-function Chat() {
+function ChatBot() {
     const [chatBoxIsClosed, setChatBoxIsClosed] = useState(false); // Default to open for demo purposes
     const [messages, setMessages] = useState([]);
     const [currentIndex, setCurrentIndex] = useState(0);
+    // eslint-disable-next-line no-unused-vars
     const [selectedQuestion, setSelectedQuestion] = useState(null);
 
     const endRef = useRef(null);
@@ -91,10 +92,10 @@ function Chat() {
             }, (index + 1) * 800); // Delay each answer by 800ms
         });
         } else {
-        console.error(
-            "Question answers are not in the correct format:",
-            question
-        );
+            console.error(
+                "Question answers are not in the correct format:",
+                question
+            );
         }
     };
 
@@ -140,7 +141,7 @@ function Chat() {
                     {currentIndex === greetingMessages.length && (
                     <div className="">
                         <ul>
-                        {questions.map((question, index) => (
+                        {questions.map((question) => (
                             <li key={question.id}>
                             <button
                                 onClick={() => handleSelectQuestion(question)}
@@ -160,4 +161,4 @@ function Chat() {
   );
 }
 
-export default Chat;
+export default ChatBot;
