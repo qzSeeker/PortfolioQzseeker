@@ -3,7 +3,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import {  
   ExternalLink, 
   Github, 
-  Maximize2 
+  Maximize2, 
+  X
 } from 'lucide-react';
 
 function Project() {
@@ -179,7 +180,7 @@ function Project() {
                     onClick={closeModal}
                     className="text-white/70 hover:text-white"
                   >
-                    Close
+                    <X/>
                   </button>
                 </div>
 
@@ -258,6 +259,12 @@ function Project() {
                     <Github className="w-5 h-5" /> GitHub
                   </a>
                 </div>
+                <button 
+                    onClick={closeModal}
+                    className="text-white/70 hover:text-white mt-4 text-center w-full"
+                  >
+                    Close
+                  </button>
               </motion.div>
             </motion.div>
           )}
