@@ -102,7 +102,7 @@ function ChatBot() {
     return (
         <>
         <div
-            className={`h-screen border border-white/15 w-screen md:w-96 md:h-[34rem] fixed md:top-80 top-0 md:right-10 shadow-md md:rounded-md overflow-hidden z-30 ${
+            className={`h-screen border border-white/15 w-screen md:w-96 md:h-[34rem] fixed md:top-80 top-0 md:right-10 shadow-md md:rounded-md overflow-hidden z-50 ${
             chatBoxIsClosed ? "hidden" : ""
             }`}
         >
