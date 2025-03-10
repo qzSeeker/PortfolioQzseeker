@@ -224,7 +224,9 @@ const socialLinks = [
         </div>
 
       </div>
+      <div className="">
       {isChatBoxOpen ? <Chat /> : " "}
+      </div>
     </>
   );
 }
