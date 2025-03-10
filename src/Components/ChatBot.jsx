@@ -24,31 +24,31 @@ import { useEffect, useRef, useState } from "react";
         question: "Tell me about yourself",
         answers: [
         "I'm representing a computer science student who's passionate about software development.",
-        "They're on a mission to become a software engineer at a leading tech company.",
-        "Their journey combines academic learning with practical project experience.",
-        "They're particularly interested in web development and data structures & algorithms.",
+        "I'm on a mission to become a software engineer at a leading tech company.",
+        "My journey combines academic learning with practical project experience.",
+        "I'm particularly interested in web development and data structures & algorithms.",
         ],
     },
     {
         id: 2,
         question: "What technologies do you know?",
         answers: [
-        "My creator is proficient in several technologies:",
-        "Frontend: React.js, HTML5, CSS3, JavaScript, Tailwind CSS",
+        "I'm proficient in several technologies:",
+        "Frontend: React.js, Next.js, HTML5, CSS3, JavaScript, Tailwind CSS",
         "Backend: Node.js, Express.js, MongoDB",
         "Programming Languages: JavaScript, Python, Java, C++",
-        "Tools: Git, GitHub, VS Code, Docker (basics)",
-        "They're constantly learning new technologies to expand their skill set.",
+        "Tools: Git, GitHub, VS Code, Vercel, Netlify, Docker (basics)",
+        "I'm constantly learning new technologies to expand their skill set.",
         ],
     },
     {
         id: 3,
         question: "What's your educational background?",
         answers: [
-        "My creator is pursuing a Bachelor's degree in Computer Science (2021-2025).",
-        "They maintain a strong GPA of 3.8/4.0.",
+        "I'm pursuing a Bachelor's degree in Computer Science (2022-2025).",
+        "I maintain a strong GPA of 3.2/4.0.",
         "Relevant coursework includes Data Structures, Algorithms, Database Management, Web Development, and Software Engineering.",
-        "They've also completed several online certifications in web development and programming.",
+        "I've also completed several online certifications in web development and programming.",
         ],
     },
     {
@@ -67,7 +67,7 @@ import { useEffect, useRef, useState } from "react";
         id: 5,
         question: "What are your strengths?",
         answers: [
-        "My creator's key strengths include:",
+        "My key strengths include:",
         "• Strong problem-solving skills with a methodical approach",
         "• Quick learner who adapts to new technologies efficiently",
         "• Detail-oriented with a focus on clean, maintainable code",
@@ -79,9 +79,9 @@ import { useEffect, useRef, useState } from "react";
         id: 6,
         question: "Do you have any work experience?",
         answers: [
-        "My creator has gained valuable experience through:",
-        "• Web Development Intern at TechStart (Summer 2023): Worked on frontend development using React.js and contributed to UI improvements",
-        "• Freelance Web Developer (2022-Present): Built websites for small businesses and provided maintenance services",
+        "I've gained valuable experience through:",
+        "• Web Development Intern at RightHomeAI (2024-25): Worked on frontend development using React.js and contributed to UI improvements",
+        "• Freelance Web Developer (2023-Present): Built websites for small businesses and provided maintenance services",
         "• Teaching Assistant for Data Structures course (Fall 2022): Helped students understand complex concepts and grade assignments",
         "• Open Source Contributor: Made contributions to several open-source projects on GitHub",
         ],
@@ -90,44 +90,44 @@ import { useEffect, useRef, useState } from "react";
         id: 7,
         question: "What are you currently learning?",
         answers: [
-        "My creator is currently focusing on:",
+        "I'm currently focusing on:",
         "• Advanced React patterns and performance optimization",
         "• Backend development with Node.js and Express",
         "• Database design and optimization",
         "• Data Structures and Algorithms for technical interviews",
         "• Cloud services (AWS fundamentals)",
-        "They believe in continuous learning to stay current with industry trends.",
+        "I believe in continuous learning to stay current with industry trends.",
         ],
     },
     {
         id: 8,
         question: "Why should we hire you?",
         answers: [
-        "My creator would be a valuable addition to your team because:",
-        "• They bring a strong foundation in computer science fundamentals",
-        "• They have practical experience building real-world applications",
-        "• They're passionate about writing clean, efficient code",
-        "• They're a team player with good communication skills",
-        "• They're eager to learn and grow with your organization",
-        "• They're committed to delivering high-quality work on schedule",
+        "I would be a valuable addition to your team because:",
+        "• I bring a strong foundation in computer science fundamentals",
+        "• I have practical experience building real-world applications",
+        "• I'm passionate about writing clean, efficient code",
+        "• I'm a team player with good communication skills",
+        "• I'm eager to learn and grow with your organization",
+        "• I'm committed to delivering high-quality work on schedule",
         ],
     },
     {
         id: 9,
         question: "What are your career goals?",
         answers: [
-        "My creator's career goals include:",
+        "My career goals include:",
         "• Short-term: Secure a software engineering role where they can apply their skills and continue learning",
         "• Medium-term: Grow into a senior developer position with deeper technical expertise",
         "• Long-term: Take on leadership responsibilities and mentor junior developers",
-        "They're particularly interested in working on products that solve real-world problems and have meaningful impact.",
+        "I'm particularly interested in working on products that solve real-world problems and have meaningful impact.",
         ],
     },
     {
         id: 10,
         question: "How do you approach problem-solving?",
         answers: [
-        "My creator approaches problem-solving methodically:",
+        "I approaches problem-solving methodically:",
         "1. Understanding the problem thoroughly before diving into solutions",
         "2. Breaking complex problems into smaller, manageable components",
         "3. Researching existing solutions and best practices",
@@ -141,24 +141,24 @@ import { useEffect, useRef, useState } from "react";
         id: 11,
         question: "Share your contact information",
         answers: [
-        "You can reach my creator through:",
-        "• Email: your.email@example.com",
-        "• LinkedIn: linkedin.com/in/yourprofile",
-        "• GitHub: github.com/yourusername",
-        "• Portfolio: yourportfolio.com",
-        "They're open to discussing opportunities and would be happy to connect!",
+        "You can reach me through:",
+        "• Email: qzseeker@gmail.com",
+        "• LinkedIn: linkedin.com/in/arpit-yadav-29b5a0257",
+        "• GitHub: github.com/qzSeeker",
+        "• Portfolio: qzseeker.netlify.app",
+        "I'm open to discussing opportunities and would be happy to connect!",
         ],
     },
     {
         id: 12,
         question: "Do you have any certifications?",
         answers: [
-        "My creator has earned several certifications:",
-        "• Full Stack Web Development (Udemy, 2022)",
-        "• React - The Complete Guide (Udemy, 2023)",
-        "• JavaScript Algorithms and Data Structures (freeCodeCamp, 2022)",
-        "• Introduction to Python Programming (Coursera, 2021)",
-        "• Git & GitHub Fundamentals (LinkedIn Learning, 2022)",
+        "I've earned several certifications:",
+        "• Web Development (An Institute, 2023)",
+        "• React - The Complete Guide (FreeCodeCamp, 2023)",
+        "• JavaScript Algorithms and Data Structures (freeCodeCamp, 2023)",
+        "• Introduction to Python Programming (Coursera, 2024)",
+        "• Git & GitHub Fundamentals (LinkedIn Learning, 2024)",
         ],
     },
     ];
@@ -412,7 +412,7 @@ import { useEffect, useRef, useState } from "react";
             {minimized ? (
                 <button
                 onClick={handleMinimize}
-                className="bg-[#0b101a] text-white p-4 rounded-full shadow-lg hover:bg-[#1a2333] transition-all"
+                className="bg-[#0b101a] text-gray-400 p-4 rounded-full border border-gray-600 shadow-lg hover:bg-[#1a2333] transition-all"
                 >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

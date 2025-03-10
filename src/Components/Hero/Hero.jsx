@@ -50,7 +50,7 @@ const socialLinks = [
   },
   { 
     icon: <Linkedin className="w-6 h-6" />, 
-    href: "https://linkedin.com/in/https://linkedin.com/in/arpit-yadav-29b5a0257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+    href: "https://linkedin.com/in/arpit-yadav-29b5a0257/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
   },
   { 
     icon: <Twitter className="w-6 h-6" />, 
