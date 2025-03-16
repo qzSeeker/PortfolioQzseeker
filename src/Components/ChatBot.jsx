@@ -439,8 +439,8 @@ import { useEffect, useRef, useState } from "react";
                 {/* Header */}
                 <div className="h-16 w-full bg-[#0b101a] flex justify-between items-center p-4 z-10 top-0 sticky border-b border-white/10">
                     <div className="flex items-center">
-                    <div className="h-8 w-8 rounded-full bg-indigo-300 text-gray-700 flex items-center justify-center mr-3">
-                        <svg
+                    <div className="h-8 w-8 rounded-full overflow-hidden bg-indigo-300 text-gray-700 flex items-center justify-center mr-3">
+                        {/* <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
                         height="16"
@@ -455,7 +455,8 @@ import { useEffect, useRef, useState } from "react";
                         <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
                         <line x1="9" y1="9" x2="9.01" y2="9"></line>
                         <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
+                        </svg> */}
+                        <img src="/profilelogo2.jpg" />
                     </div>
                     <div className="flex flex-col justify-center">
                         <h1 className="font-semibold text-white text-sm">
@@ -530,8 +531,8 @@ import { useEffect, useRef, useState } from "react";
                         } mb-4`}
                     >
                         {!message.isUser && (
-                        <div className="w-8 h-8 rounded-full bg-indigo-300 text-gray-800 flex items-center justify-center mr-2 flex-shrink-0">
-                            <svg
+                        <div className="w-8 h-8 rounded-full overflow-hidden bg-indigo-300 text-gray-800 flex items-center justify-center mr-2 flex-shrink-0">
+                            {/* <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="12"
                             height="12"
@@ -546,7 +547,8 @@ import { useEffect, useRef, useState } from "react";
                             <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
                             <line x1="9" y1="9" x2="9.01" y2="9"></line>
                             <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                            </svg>
+                            </svg> */}
+                        <img src="/profilelogo2.jpg"/>
                         </div>
                         )}
                         <div
