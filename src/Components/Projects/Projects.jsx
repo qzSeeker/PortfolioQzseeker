@@ -12,6 +12,20 @@ function Project() {
 
   const projects = [
     {
+      title: "eyerolldaily - Where Memes Cry and Laught Together",
+      description: "eyerolldaily – Where Sarcasm Scrolls Faster Than News",
+      webLink: "https://eyerolldaily.vercel.app",
+      githubLink: "https://github.com/qzSeeker/eyerolldaily",
+      projectImg: 'eyerolldaily.png',
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+      features: [
+        "All About Trending Memes",
+        "Get Meme'd Easily",
+        "Fresh Memes Daily",
+        "Chance to collaborate with big meme pages"
+      ]
+    },
+    {
       title: "chat.if.i - Real-time Chat Application",
       description: "A fully-featured real-time chat application with Firebase authentication, seamless messaging, and responsive design.",
       webLink: "https://chat-if-i.netlify.app",

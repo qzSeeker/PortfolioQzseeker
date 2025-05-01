@@ -588,25 +588,38 @@ import { useEffect, useRef, useState } from "react";
                     ))}
 
                     {/* Typing indicator */}
-                    {isTyping && (
+                    {!isTyping && (
                     <div className="flex justify-start mb-4">
-                        <div className="w-8 h-8 rounded-full bg-indigo-300 text-gray-800 flex items-center justify-center mr-2 flex-shrink-0">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="12"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                        >
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                            <line x1="9" y1="9" x2="9.01" y2="9"></line>
-                            <line x1="15" y1="9" x2="15.01" y2="9"></line>
-                        </svg>
+                        <div className="w-8 h-8 rounded-full bg-indigo-300 text-gray-800 flex items-center justify-center mr-2 flex-shrink-0 relative">
+                        {/* Image */}
+                        <img src="/profilelogo2.jpg" alt="Profile Logo" className="object-cover" />
+                        
+                        {/* SVG Animation */}
+                        <div className="absolute -inset-3 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="w-full h-full">
+                            <ellipse cx="70" cy="30" rx="22" ry="15" fill="transparent" stroke="white" strokeWidth="2">
+                                <animate attributeName="ry" values="15;16;15;14;15" dur="2s" repeatCount="indefinite" />
+                            </ellipse>
+                            <circle cx="40" cy="40" r="6" fill="transparent" stroke="white" strokeWidth="2">
+                                <animate attributeName="r" values="6;7;6;5;6" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="50" cy="45" r="4" fill="transparent" stroke="white" strokeWidth="2">
+                                <animate attributeName="r" values="4;5;4;3;4" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="57" cy="40" r="3" fill="transparent" stroke="white" strokeWidth="2">
+                                <animate attributeName="r" values="3;4;3;2;3" dur="2s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="65" cy="30" r="2" fill="white">
+                                <animate attributeName="opacity" values="1;0;1" dur="1.5s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="70" cy="30" r="2" fill="white">
+                                <animate attributeName="opacity" values="1;0;1" dur="1.5s" begin="0.25s" repeatCount="indefinite" />
+                            </circle>
+                            <circle cx="75" cy="30" r="2" fill="white">
+                                <animate attributeName="opacity" values="1;0;1" dur="1.5s" begin="0.5s" repeatCount="indefinite" />
+                            </circle>
+                            </svg>
+                        </div>
                         </div>
                         <div className="bg-gray-800 rounded-lg p-3 shadow-md max-w-xs rounded-bl-none">
                         <div className="flex space-x-1">

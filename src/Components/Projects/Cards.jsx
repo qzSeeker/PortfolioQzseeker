@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+/* eslint-disable react/prop-types */
+import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 
