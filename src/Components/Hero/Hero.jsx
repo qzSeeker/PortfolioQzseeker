@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Chat from "../ChatBot";
 import { Link } from "react-scroll";
 import { FlipWords } from "../ui/flip-words";
-// import Resume from "../Resume/Resume";
+import Resume from "../Resume/Resume";
 import { motion } from "framer-motion";
 import { Download, Github, Linkedin, Send, Twitter } from "lucide-react";
 
@@ -186,9 +186,10 @@ const socialLinks = [
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <button className="flex items-center gap-2 border cursor-pointer border-white/15 px-5 py-3 rounded-full hover:bg-white/10 transition">
+          {/* <button className="flex items-center gap-2 border cursor-pointer border-white/15 px-5 py-3 rounded-full hover:bg-white/10 transition">
             Download CV
-          </button>
+          </button> */}
+          <Resume/>
           <Link
             to="contact"
             spy={true}
