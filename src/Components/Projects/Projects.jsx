@@ -12,6 +12,20 @@ function Project() {
 
   const projects = [
     {
+      title: "GharLeloAi - Ghar Se Ghar Lelo AI",
+      description: "GharLeloAi – Your AI-powered home assistant for all your daily",
+      webLink: "https://gharleloai.vercel.app",
+      githubLink: "https://github.com/qzSeeker/gharleloai",
+      projectImg: 'gharleloai.png',
+      technologies: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
+      features: [
+        "AI-powered home assistant",
+        "Daily task management",
+        "Personalized recommendations",
+        "Seamless user experience"
+      ]
+    },
+    {
       title: "eyerolldaily - Where Memes Cry and Laught Together",
       description: "eyerolldaily – Where Sarcasm Scrolls Faster Than News",
       webLink: "https://eyerolldaily.vercel.app",
